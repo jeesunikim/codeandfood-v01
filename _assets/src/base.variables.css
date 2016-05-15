@@ -1,0 +1,9 @@
+/* Base Variables */
+
+:root {
+	--baseline: 1.75rem;
+	--serif: "Georgia", "Times New Roman", serif;
+	--sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+	--text-color: #000000;
+
+};

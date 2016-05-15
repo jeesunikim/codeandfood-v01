@@ -18,4 +18,4 @@ markdown: kramdown
 #==============================
 
 include: [".htaccess"]
-exclude: ["node_modules", "gulpfile.js"]
+exclude: ["node_modules", "gulpfile.js", "Gemfile", "Gemfile.lock"]
