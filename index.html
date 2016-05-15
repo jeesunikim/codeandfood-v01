@@ -1,23 +1,18 @@
 ---
-layout: default
+layout: page
+title: Blog
+in-nav: true
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<ul class="unl post-list">
+{% for post in site.posts %}
+  {% if post.hidden != true %}
+  <li class="post-list__item ml">
+    <a href="{{ post.url }}">
+      <span class="b m0">{{ post.title }}</span>
+      <span class="meta h4 b">{{ post.date | date: "%A %-d %B %Y" }}</span>
+      {{ post.excerpt }}
+    </a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
