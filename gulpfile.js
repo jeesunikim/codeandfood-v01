@@ -29,3 +29,16 @@ gulp.task('styles', function() {
   .pipe(nano({discardComments: {removeAll: true}}))
   .pipe(gulp.dest('./_assets/css'));
 });
+
+gulp.task('browser-sync', function() {
+	browserSync.init({
+		proxy: "localhost:4000",
+		port: 5000,
+		open: false,
+		injectChanges: true
+	});
+});
+
+gulp.task('watch', ['browser-sync'], function () {
+	gulp.watch('./_assets/src/*.css', ['styles']);
+})
