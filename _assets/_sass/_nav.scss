@@ -1,8 +1,13 @@
 nav.site-nav {
+	text-align: center;
+	margin: 25px 0;
 	a {
 		font-family: 'Roboto', sans-serif;
 		color: #000;
-		font-size: .75rem;
 		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 2%;
+		line-height: 75px;
+		vertical-align: middle;
 	}
 }

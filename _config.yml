@@ -1,5 +1,6 @@
-# General Site Config #
-
+#==============================
+# General Site Config
+#==============================
 title: Code and Food
 email: jeesunikim@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -16,6 +17,11 @@ markdown: kramdown
 #==============================
 # File inclusions/exclusions
 #==============================
-
 include: [".htaccess"]
 exclude: ["node_modules", "gulpfile.js", "Gemfile", "Gemfile.lock"]
+
+#==============================
+# Outputting
+#==============================
+paginate: 5
+paginate_path: "/blog/page:num/"
