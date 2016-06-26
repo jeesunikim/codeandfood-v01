@@ -42,7 +42,7 @@ gulp.task('styles', function() {
     autoprefixer({ browsers: ['last 3 versions'] }) // Autoprefix applicable CSS
   ]))
   .pipe(nano({discardComments: {removeAll: true}}))
-  .pipe(gulp.dest('./_includes/'));
+  .pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('browser-sync', function() {
@@ -59,9 +59,9 @@ gulp.task('jekyll-build-once', shell.task(['bundle exec jekyll build --increment
 
 gulp.task('jekyll-serve', function () {
 	browserSync.init({ server: { baseDir: '_site/'}});
-	gulp.watch('./_assets/src/*.scss', ['styles']);
+	gulp.watch('./_assets/_sass/*.scss', ['styles']);
 	gulp.watch('_site/**/*.*').on('change', browserSync.reload);
-	gulp.watch('_includes/style.css').on('change', browserSync.reload);
+	gulp.watch('/assets/css/style.css').on('change', browserSync.reload);
 })
 
 gulp.task('default', ['jekyll-build', 'jekyll-serve', 'styles']);

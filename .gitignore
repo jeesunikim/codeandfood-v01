@@ -1,5 +1,6 @@
 # Ignore Jekyll generated files
 _site
+_drafts
 
 # Ignore caches and logs
 .sass-cache
