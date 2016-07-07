@@ -5,6 +5,8 @@ var gulp         = require('gulp'),
 	cssnext      = require('postcss-cssnext'),
 	nano         = require('gulp-cssnano'),
 	shell        = require('gulp-shell'),
+	concat = require('gulp-concat-util'),
+	babel = require("gulp-babel"),
 	atImport     = require('postcss-import'),
 	stylelint = require("stylelint"),
 	autoprefixer = require('autoprefixer'),
@@ -29,21 +31,30 @@ var processors = [
 	})
 ];
 
-gulp.task('styles', function() {
+gulp.task('styles', function () {
   return gulp.src('./_assets/_sass/style.scss')
-  .pipe(sass({
-  	includePaths: require('node-bourbon').includePaths,
-    includePaths: require('node-neat').includePaths
-   }).on('error', sass.logError))
-  .pipe(postcss([
-    // http://stylelint.io/?docs/user-guide/rules.md
-    stylelint({ /* options located in ./.stylelintrc */ }),
-    reporter({ clearMessages: true }),
-    autoprefixer({ browsers: ['last 3 versions'] }) // Autoprefix applicable CSS
-  ]))
-  .pipe(nano({discardComments: {removeAll: true}}))
-  .pipe(gulp.dest('./assets/css'));
+	  .pipe(sass({
+	  	includePaths: require('node-bourbon').includePaths,
+	    includePaths: require('node-neat').includePaths
+	   }).on('error', sass.logError))
+	  .pipe(postcss([
+	    // http://stylelint.io/?docs/user-guide/rules.md
+	    stylelint({ /* options located in ./.stylelintrc */ }),
+	    reporter({ clearMessages: true }),
+	    autoprefixer({ browsers: ['last 3 versions'] }) // Autoprefix applicable CSS
+	  ]))
+	  .pipe(nano({discardComments: {removeAll: true}}))
+	  .pipe(gulp.dest('./assets/css'));
 });
+
+gulp.task('js', function () {
+	return gulp.src('./_assets/_js/*.js')
+		.pipe(sourcemaps.init())
+    .pipe(babel())
+    .pipe(concat("main.js"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("./assets/js"));	
+})
 
 gulp.task('browser-sync', function() {
 	browserSync.init({
@@ -60,9 +71,10 @@ gulp.task('jekyll-build-once', shell.task(['bundle exec jekyll build --increment
 gulp.task('jekyll-serve', function () {
 	browserSync.init({ server: { baseDir: '_site/'}});
 	gulp.watch('./_assets/_sass/*.scss', ['styles']);
+	gulp.watch('./_assets/_js/*.js', ['js']);
 	gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 	gulp.watch('/assets/css/style.css').on('change', browserSync.reload);
 })
 
-gulp.task('default', ['jekyll-build', 'jekyll-serve', 'styles']);
-gulp.task('build', ['styles', 'jekyll-build-once']);
+gulp.task('default', ['jekyll-build', 'jekyll-serve', 'styles', 'js']);
+gulp.task('build', ['styles', 'js', 'jekyll-build-once']);
