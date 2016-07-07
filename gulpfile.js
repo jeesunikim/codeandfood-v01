@@ -12,6 +12,7 @@ var gulp         = require('gulp'),
 	autoprefixer = require('autoprefixer'),
 	reporter = require("postcss-reporter"),
 	sourcemaps = require('gulp-sourcemaps'),
+	uglify = require('gulp-uglify'),
 	browserSync  = require('browser-sync').create();
 
 var processors = [
@@ -47,14 +48,24 @@ gulp.task('styles', function () {
 	  .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('js', function () {
+gulp.task('jeeJS', function () {
 	return gulp.src('./_assets/_js/*.js')
 		.pipe(sourcemaps.init())
     .pipe(babel())
     .pipe(concat("main.js"))
+    .pipe(uglify())
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("./assets/js"));	
-})
+});
+
+gulp.task('vendorJS', function () {
+	return gulp.src('./_assets/_js/vendor/*.js')
+		.pipe(sourcemaps.init())
+    .pipe(concat("vendor.js"))
+    .pipe(uglify())
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("./assets/js/vendor"));	
+});
 
 gulp.task('browser-sync', function() {
 	browserSync.init({
@@ -71,10 +82,11 @@ gulp.task('jekyll-build-once', shell.task(['bundle exec jekyll build --increment
 gulp.task('jekyll-serve', function () {
 	browserSync.init({ server: { baseDir: '_site/'}});
 	gulp.watch('./_assets/_sass/*.scss', ['styles']);
-	gulp.watch('./_assets/_js/*.js', ['js']);
+	gulp.watch('./_assets/_js/*.js', ['jeeJS']);
+	gulp.watch('./_assets/_js/vendor/*.js', ['vendorJS']);
 	gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 	gulp.watch('/assets/css/style.css').on('change', browserSync.reload);
 })
 
-gulp.task('default', ['jekyll-build', 'jekyll-serve', 'styles', 'js']);
-gulp.task('build', ['styles', 'js', 'jekyll-build-once']);
+gulp.task('default', ['jekyll-build', 'jekyll-serve', 'styles', 'JeeS', 'vendorJS']);
+gulp.task('build', ['styles', 'js', 'vendorJS', 'jekyll-build-once']);
