@@ -1,6 +1,10 @@
 @charset "UTF-8";
+
 /* Variables */
 @import "variables";
+
+/* Mixins */
+@import "_mixins/media-queries";
 
 /* Base CSS */
 @import "fonts";
@@ -8,7 +12,7 @@
 @import "base";
 
 /* Page CSS */
-@import "header";
+@import "mobileNav";
 @import "nav";
 @import "content";
 @import "footer";

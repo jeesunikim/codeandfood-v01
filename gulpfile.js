@@ -48,7 +48,7 @@ gulp.task('styles', function () {
 	  .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('jeeJS', function () {
+gulp.task('customJS', function () {
 	return gulp.src('./_assets/_js/*.js')
 		.pipe(sourcemaps.init())
     .pipe(babel())
@@ -70,7 +70,7 @@ gulp.task('vendorJS', function () {
 gulp.task('browser-sync', function() {
 	browserSync.init({
 		proxy: "localhost:4000",
-		port: 5000,
+		port: 3000,
 		open: false,
 		injectChanges: true
 	});
@@ -82,11 +82,11 @@ gulp.task('jekyll-build-once', shell.task(['bundle exec jekyll build --increment
 gulp.task('jekyll-serve', function () {
 	browserSync.init({ server: { baseDir: '_site/'}});
 	gulp.watch('./_assets/_sass/*.scss', ['styles']);
-	gulp.watch('./_assets/_js/*.js', ['jeeJS']);
+	gulp.watch('./_assets/_js/*.js', ['customJS']);
 	gulp.watch('./_assets/_js/vendor/*.js', ['vendorJS']);
 	gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 	gulp.watch('/assets/css/style.css').on('change', browserSync.reload);
 })
 
-gulp.task('default', ['jekyll-build', 'jekyll-serve', 'styles', 'JeeS', 'vendorJS']);
+gulp.task('default', ['jekyll-build', 'jekyll-serve', 'styles', 'customJS', 'vendorJS']);
 gulp.task('build', ['styles', 'js', 'vendorJS', 'jekyll-build-once']);

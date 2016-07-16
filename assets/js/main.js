@@ -1,2 +1,2 @@
-
+"use strict";function currentPageOffset(){}var nav={windowHeight:window.innerHeight,wrapper:document.querySelector(".site-header .wrapper")};window.onscroll=function(){var e=window.pageYOffset,t=nav.wrapper.getElementsByTagName("nav"),a=Array.prototype.slice.call(t);console.log(e,"scrollY"),e>120?a.forEach(function(e,t){a[0].className+=" show",a[1].setAttribute("style","display: none")}):a.forEach(function(e,t){a[0].className="mobileNav",a[1].setAttribute("style","display: block")})};
 //# sourceMappingURL=main.js.map
