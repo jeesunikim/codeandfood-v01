@@ -3,11 +3,15 @@ _site
 _drafts
 
 # Ignore caches and logs
+.idea/
 .sass-cache
 .asset-cache/
 .bundle/
 Gemfile.lock
 .ruby-version
+
+# Ignore gulp generated files
+assets/
 
 # Ignore junk files
 .DS_Store

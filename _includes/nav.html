@@ -1,12 +1,7 @@
 <nav class="site-nav">
-    <!-- {% assign pages = site.pages | sort:"url" %}
-    {% for page in pages %}
-      {% if page.nav == true %}
-        <a {% if page.url == page.url %}class="active"{% endif %} href="{{ page.url }}">{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
- -->
     <a href="/about">About</a>
-    <a href="/"><h1>Code &amp;&amp; Food</h1></a>
-    <a href="/work">Work</a>
+    <span class="title"><a href="/code">Code</a></span> 
+    <span class="title"><a href="/">&amp;&amp;</a></span> 
+    <span class="title"><a href="/food">Food</a></span>
+    <a href="/code/work">Work</a>
 </nav>

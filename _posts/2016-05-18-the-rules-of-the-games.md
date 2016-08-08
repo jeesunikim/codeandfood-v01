@@ -1,8 +1,8 @@
 ---
 layout: default
-title:  "Welcome to Jekyll!"
+title:  "The rules of the games"
 date:   2016-05-14 19:18:20 -0400
-categories: jekyll update
+category: code
 ---
 
 The rules of the games.

@@ -1,8 +1,8 @@
 ---
 layout: default
-title:  "Welcome to Jekyll!"
+title:  "Introducing Nearby"
 date:   2016-05-14 19:18:20 -0400
-categories: jekyll update
+category: code
 ---
 
 Introducing NearBy: Physical proximity within and without apps
