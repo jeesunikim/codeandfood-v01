@@ -88,5 +88,5 @@ gulp.task('jekyll-serve', function () {
 	gulp.watch('/assets/css/style.css').on('change', browserSync.reload);
 })
 
-gulp.task('default', ['jekyll-build', 'jekyll-serve', 'styles', 'customJS', 'vendorJS']);
+gulp.task('default', ['jekyll-build', 'jekyll-serve']);
 gulp.task('build', ['styles', 'js', 'vendorJS', 'jekyll-build-once']);
