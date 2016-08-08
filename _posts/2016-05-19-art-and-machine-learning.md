@@ -1,8 +1,8 @@
 ---
 layout: default
-title:  "Welcome to Jekyll!"
+title:  "Art and Machine Learning"
 date:   2016-05-14 19:18:20 -0400
-categories: jekyll update
+category: code
 ---
 
 The recent progress of machine learning is impressive, and the applications seem endless. Neural networks are incredible tools allowing us not just to analyze but also manipulate and generate images, movies and music. Over the last 18 months, the Lab at the Cultural Institute has invited artists and creative technologists to explore ways to apply machine learning to culture and the arts. We'll present some of our results with some onstage technical demos and a few special guests.

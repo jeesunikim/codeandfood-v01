@@ -1,8 +1,8 @@
 ---
 layout: default
-title:  "Welcome to Jekyll!"
+title:  "Freedom Gaming with Project Tango"
 date:   2016-05-14 19:18:20 -0400
-categories: jekyll update
+category: code
 ---
 
 Project Tango transforms the way we play games by understanding your phone's precise 3D motion. Chase a virtual pet around your home, tag ghosts with your phone and fling rocks at castles in 3D. Gaming is the most popular app category for Project Tango - over 2/3 of all the Project Tango apps on Google Play are games. Learn how to build a simple Project Tango game along with some tips and tricks for development.
