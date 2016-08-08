@@ -15,8 +15,14 @@ nav.site-nav {
 			text-transform: uppercase;
 			letter-spacing: 0.08em;
 			display: inline-block;
-			margin: 0 2%;
+			margin: 0 1%;
 			vertical-align: middle;
+		}
+		span.title a {
+			font-family: "essonnes-display", serif;
+			text-align: center;
+			font-size: 3.25rem;
+			font-weight: 400;
 		}
 		transition: .05s ease-out;
 		&.fixed {
@@ -38,7 +44,7 @@ nav.site-nav {
 				color: #fff;
 				font-weight: 200;
 				font-size: .75rem;
-				margin: 0;
+				margin: 0 .5%;
 				letter-spacing: 0.08em;
 				text-transform: uppercase;
 				&:nth-child(2) {

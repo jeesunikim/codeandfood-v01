@@ -59,12 +59,12 @@ gulp.task('customJS', function () {
 });
 
 gulp.task('vendorJS', function () {
-	return gulp.src('./_assets/_js/vendor/*.js')
+	return gulp.src('./_assets/_js/lib/*.js')
 	.pipe(sourcemaps.init())
-    .pipe(concat("vendor.js"))
+    .pipe(concat("lib.js"))
     .pipe(uglify())
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("./assets/js/vendor"));	
+    .pipe(gulp.dest("./assets/js/lib"));	
 });
 
 gulp.task('browser-sync', function() {
@@ -83,10 +83,10 @@ gulp.task('jekyll-serve', function () {
 	browserSync.init({ server: { baseDir: '_site/'}});
 	gulp.watch('./_assets/_sass/*.scss', ['styles']);
 	gulp.watch('./_assets/_js/*.js', ['customJS']);
-	gulp.watch('./_assets/_js/vendor/*.js', ['vendorJS']);
+	gulp.watch('./_assets/_js/lib/*.js', ['vendorJS']);
 	gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 	gulp.watch('/assets/css/style.css').on('change', browserSync.reload);
 })
 
-gulp.task('default', ['jekyll-build', 'jekyll-serve']);
+gulp.task('default', ['jekyll-build', 'jekyll-serve', 'vendorJS']);
 gulp.task('build', ['styles', 'js', 'vendorJS', 'jekyll-build-once']);
