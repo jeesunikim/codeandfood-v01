@@ -9,6 +9,9 @@ _drafts
 Gemfile.lock
 .ruby-version
 
+# Ignore gulp generated files
+assets/
+
 # Ignore junk files
 .DS_Store
 
