@@ -3,6 +3,7 @@ _site
 _drafts
 
 # Ignore caches and logs
+.idea/
 .sass-cache
 .asset-cache/
 .bundle/
