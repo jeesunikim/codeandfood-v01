@@ -85,8 +85,8 @@ gulp.task('jekyll-serve', function () {
 	gulp.watch('./_assets/_js/*.js', ['customJS']);
 	gulp.watch('./_assets/_js/lib/*.js', ['vendorJS']);
 	gulp.watch('_site/**/*.*').on('change', browserSync.reload);
-	gulp.watch('/assets/css/style.css').on('change', browserSync.reload);
+	gulp.watch('/assets/**/*.*').on('change', browserSync.reload);
 })
 
-gulp.task('default', ['jekyll-build', 'jekyll-serve', 'vendorJS']);
+gulp.task('default', ['jekyll-build', 'jekyll-serve', 'customJS', 'vendorJS']);
 gulp.task('build', ['styles', 'js', 'vendorJS', 'jekyll-build-once']);

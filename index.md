@@ -5,7 +5,7 @@ title: Code && Food
 <ul class="posts">
 {% for post in site.posts %}
   {% if post.hidden != true %}
-  <li class="post {{ post.category }}">	
+  <li data-post="scroll-in-view" class="post">
     <a href="{{ post.url }}">
       <span class="b m0">{{ post.title }}</span>
       <!-- <span class="meta h4 b">{{ post.date | date: "%A %-d %B %Y" }}</span> -->

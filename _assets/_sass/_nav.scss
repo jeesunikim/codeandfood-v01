@@ -1,3 +1,6 @@
+header.site-header {
+	margin-top: 3%;
+}
 nav.site-nav {
 	@include min-screen($xs) {
 		display: none;
@@ -6,7 +9,7 @@ nav.site-nav {
 	  transition: .5s ease-out;
 		display: block;
 		text-align: center;
-		position: absolute;
+		position: relative; // position: absolute;
 		width: 100%;
 		transition: all 0.2s ease-in;
 		a {
@@ -15,8 +18,8 @@ nav.site-nav {
 			text-transform: uppercase;
 			letter-spacing: 0.08em;
 			display: inline-block;
-			margin: 0 1%;
 			vertical-align: middle;
+			margin: 0 10px;
 		}
 		span.title a {
 			font-family: "essonnes-display", serif;
