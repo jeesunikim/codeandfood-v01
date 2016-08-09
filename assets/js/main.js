@@ -1,2 +1,2 @@
-"use strict";window.onscroll=function(s){var i=window.pageYOffset,e=document.querySelector("nav.site-nav");i>90?e.classList.contains("fixed")||e.classList.add("fixed"):e.classList.contains("fixed")&&e.classList.remove("fixed")};
+"use strict";window.onscroll=function(s){var e=window.pageYOffset,t=document.querySelector("nav.site-nav");e>90?t.classList.contains("fixed")||t.classList.add("fixed"):t.classList.contains("fixed")&&t.classList.remove("fixed")};var posts=$("ul.posts"),eachPost=posts.find("li");$(document).ready(function(){eachPost.each(function(s){console.log(400*s,"I"),$(this).delay(350*s).queue(function(){$(this).addClass("fadein")})})});
 //# sourceMappingURL=main.js.map

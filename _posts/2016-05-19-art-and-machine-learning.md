@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Art and Machine Learning"
 date:   2016-05-14 19:18:20 -0400
 category: code
