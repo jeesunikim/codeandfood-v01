@@ -29,15 +29,17 @@ ul.posts {
 	position: relative;
 	list-style: none;
 	li.post {
-		width: 33%;
-		padding: 5%;
+		width: 31%;
+		margin: 2.5% 1%;
+		padding: 3% 4%;
+		background-color: red;
+		height: 400px;
 		float: left;
 		opacity: 0;
 		&:nth-child(3n+1) {
 			clear: both;
 		}
 		&:last-of-type {
-			float: none;
 		}
 		p { 
 			font-size: .75rem; 
