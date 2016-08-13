@@ -1,11 +1,9 @@
 var posts = $('ul.posts'),
 	eachPost = posts.find('li');
-	 
-	 // data-post-scroll="in-view" 
-
+	
 $(document).ready(function () {
 	eachPost.each(function(i) {
-		console.log(i * 400, "I");
+		// console.log(i * 400, "I");
 		$(this).delay(i * 350).queue(function () {
 			$(this).addClass('fadein');
 		});
