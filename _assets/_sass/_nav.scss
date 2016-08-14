@@ -1,6 +1,14 @@
 header.site-header {
-	margin-top: 3%;
+	h1 {
+		display: none;
+	}
+	line-height: 180px; // 88px
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 100;
 }
+
 nav.site-nav {
 	@include min-screen($xs) {
 		display: none;
@@ -20,12 +28,12 @@ nav.site-nav {
 			display: inline-block;
 			vertical-align: middle;
 			margin: 0 10px;
-		}
-		span.title a {
-			font-family: "essonnes-display", serif;
-			text-align: center;
-			font-size: 3.25rem;
-			font-weight: 400;
+			&.title {
+				font-family: "essonnes-display", serif;
+				text-align: center;
+				font-size: 3.25rem;
+				font-weight: 400;
+			}
 		}
 		transition: .05s ease-out;
 		&.fixed {
@@ -37,25 +45,29 @@ nav.site-nav {
 			margin: 0;
 			transform: translateY(0);
 			transition: .07s ease-in;
-			padding: 12px 10px;
+			// padding: 12px 10px;
 			text-align: center;
 			top: 0;
 			width: 100%;
 			z-index: 10;
-			span.title a {
-				font-size: 2.5rem;
-			}
 			a {
 				transition: .15s ease-in-out;
 				color: #fff;
 				font-weight: 200;
 				font-size: .75rem;
 				margin: 0 .5%;
+				transition: height 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 				letter-spacing: 0.08em;
 				text-transform: uppercase;
-				&:nth-child(2) {
-					padding: 0 50px;
+				&.title {
+					font-family: "essonnes-display", serif;
+					text-align: center;
+					font-size: 3.25rem;
+					font-weight: 400;
 				}
+				// &:nth-child(2) {
+				// 	padding: 0 50px;
+				// }
 				h1 { 
 					font-family: 'Roboto', sans-serif;
 					font-size: .75rem; 
