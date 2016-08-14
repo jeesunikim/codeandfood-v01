@@ -11,23 +11,10 @@
 	border-top: 1px solid $lightgrey;
 	&.post {
 		// padding: 5% 3%;
-		margin: 2.5% 1% 1.5%;
+		padding-top: 2.5%;
+		margin: 180px 1% 1.5%;
 	}
 }
-
-// [data-post][data-post*="scroll-in-view"] {
-// 	visibility: hidden;
-// 	-webkit-backface-visibility: hidden;
-// }
-
-// [data-post-scroll][data-post*="in-view"] {
-// 	visibility: visible;
-// 	animation-delay: 0.1s; 
-// 	animation-duration: 0.5s;
-// 	animation-direction : normal; 
-// 	animation-fill-mode : both;
-// 	animation-timing-function : ease;
-// }
 
 a { color: #000; }
 
