@@ -73,7 +73,6 @@
 	fixedNav.prototype.setUnsticky = function () {
 		this.isSticky = false;
 		navSelf.header.removeClass('fixed');
-		navSelf.header.css('line-height', 180 + 'px'); 
 	}
 
 	$(function() {
