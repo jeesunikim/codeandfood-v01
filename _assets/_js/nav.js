@@ -10,6 +10,7 @@
 		this.mainNav = $('header');
 		this.bodyContainer = $('body');
 		this.scrollPositionStart = 0;
+		this.defaultLH = parseInt(this.mainNav.css('line-height'));
 		
 		navSelf = this;
 
@@ -28,18 +29,33 @@
 
 	    if (!navSelf.isSticky) {
 
-	        this.defaultLH = parseInt(navSelf.mainNav.css('line-height')); // 140
+	        this.currentLH = parseInt(navSelf.mainNav.css('line-height'));
 	        this.calculatedLH;
 
-			console.log(this.defaultLH, 'this.defaultLH');
+			// console.log(this.defaultLH, 'this.defaultLH');
+
+			// scroll direction is up
+			// scroll direction is down
+
+			navSelf.scrollPositionStart // 0
+	        if ( navSelf.defaultLH > 88 && ( scrollTop > navSelf.scrollPositionStart )) {
+
+	        	 this.calculatedLH = navSelf.defaultLH - scrollTop;
 
 
-	        if ( this.defaultLH > 110 ) {
+        		navSelf.mainNav.css('line-height', this.calculatedLH + 'px'); 	
 
-	        	 this.calculatedLH = parseInt(this.defaultLH) - scrollTop;
-	        	navSelf.mainNav.css('line-height', this.calculatedLH + 'px');	
-		        console.log('this.calculatedLH', this.calculatedLH + 'px');
-	        } 
+	        	console.log(navSelf.defaultLH, 'navSelf.defaultLH', this.currentLH, 'this.currentLH')       
+	        	if ( this.currentLH < 92 ) {
+		        	console.log("HEYY")
+		        	navSelf.mainNav.css('line-height', 88 + 'px'); 
+		        } 
+
+	        } else {
+	        	this.calculatedLH = navSelf.defaultLH + scrollTop;
+
+        		navSelf.mainNav.css('line-height', this.calculatedLH + 'px'); 	
+	        }
 
 	        
 
