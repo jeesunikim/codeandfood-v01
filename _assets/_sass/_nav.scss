@@ -56,6 +56,7 @@ nav.site-nav {
 				font-weight: 200;
 				font-size: .75rem;
 				margin: 0 .5%;
+				transition: height 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 				letter-spacing: 0.08em;
 				text-transform: uppercase;
 				&.title {
@@ -64,9 +65,9 @@ nav.site-nav {
 					font-size: 3.25rem;
 					font-weight: 400;
 				}
-				&:nth-child(2) {
-					padding: 0 50px;
-				}
+				// &:nth-child(2) {
+				// 	padding: 0 50px;
+				// }
 				h1 { 
 					font-family: 'Roboto', sans-serif;
 					font-size: .75rem; 
