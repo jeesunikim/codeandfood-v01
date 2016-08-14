@@ -50,6 +50,9 @@
 	        
 	        }
 	        
+        } else {
+        	this.setUnsticky();
+			navSelf.header.css('line-height', navSelf.defaultLH + 'px');
         }
 
 	};
