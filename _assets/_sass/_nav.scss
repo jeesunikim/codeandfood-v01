@@ -1,37 +1,64 @@
 header.site-header {
-	h1 {
-		display: none;
+	@include min-screen($xs) {
+		padding: 0 20px;
 	}
-	line-height: 180px;
+	h1 { display: none; }
+	padding: 0;
+	@include min-screen($xs) {
+		line-height: 130px;
+	}
+	@include min-screen($md) {
+		line-height: 180px;
+	}
 	width: 100%;
 	margin: 0 auto;
+	padding: 0;
 	position: fixed;
 	z-index: 100;
-	a {
-		font-family: 'Roboto', sans-serif;
-		color: #000;
-		text-transform: uppercase;
-		font-size: .75rem;
-		letter-spacing: 0.08em;
-		display: inline-block;
-		vertical-align: middle;
-		margin: 0 10px;
-		&.title {
-			font-family: "essonnes-display", serif;
-			text-align: center;
-			font-size: 3.25rem;
-			font-weight: 400;
-		}
+	nav {
+		transition: opacity 0.2s ease-out;
+		-moz-transition: opacity 0.2s ease-out;
+		-o-transition: opacity 0.2s ease-out;
+		-webkit-transition: opacity 0.2s ease-out;
+		opacity: 1;
 	}
 }
 
 .site-nav {
+	@include min-screen($xs) {
+		height: 100%;
+		top: 50%;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	@include min-screen($md) {
+		top: 0;
+		position: relative;
+	}
 	nav.nav-list{
+		a {
+			font-family: 'Roboto', sans-serif;
+			color: #000;
+			text-transform: uppercase;
+			font-size: .75rem;
+			letter-spacing: 0.08em;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 10px;
+			&.title {
+				font-family: "essonnes-display", serif;
+				text-align: center;
+				font-size: 3rem;
+				font-weight: 400;
+			}
+		}
 		@include min-screen($xs) {
-			// display: none;
+			display: none;
 		}
 		@include min-screen($md) {
-			
+			display: block;
 			opacity: 1;
 			text-align: center;
 			position: relative;
@@ -39,6 +66,78 @@ header.site-header {
 			a {
 				color: #000;
 			}
+			
+			
+		}
+	}
+	a.mobile-nav {
+		@include min-screen($xs) {
+			color: #000;
+		}
+	}
+}
+
+a.mobile-nav {
+	@include min-screen($xs) {
+		position: absolute;
+		// top: 50%;
+		// transform: translateY(-50%);
+		// -webkit-transform: translateY(-50%);
+		// -moz-transform: translateY(-50%);
+		// -o-transform: translateY(-50%);
+		opacity: 1;
+		// height: 100%;
+		width: 100%;
+	}
+	@include min-screen($md) {
+		display: none;
+	}
+	.inner {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		right: 41px;
+		top: 50%;
+		margin-top: -8px;
+		cursor: pointer;
+		@include min-screen(400px) {
+			right: 71px;
+		}
+	}
+	span.title {
+		@include min-screen($xs) {
+			display: block;
+			position: relative;
+			font-family: "essonnes-display", serif;
+			font-size: 1.75rem;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		@include min-screen(400px) {
+			left: 30px;
+		}
+	}
+	span.hamburger {
+		transition: all 0.16s ease-out;
+		-moz-transition: all 0.16s ease-out;
+		-o-transition: all 0.16s ease-out;
+		-webkit-transition: all 0.16s ease-out;
+		width: 100%;
+		position: absolute;
+		height: 2px;
+		width: 23px;
+		margin-bottom: 5px;
+		display: block;
+		background-color: #000;
+		right: 0;
+		&.top {
+			top: 0;
+		}
+		&.middle {
+			top: 7px;
+		}
+		&.bottom {
+			top: 15px;
 		}
 	}
 }
@@ -53,20 +152,58 @@ header.site-header {
 	overflow: hidden;
 	background-color: #000000;
 	margin: 0;
-	text-align: center;
 	top: 0;
 	width: 100%;
 	z-index: 10;
-	
+	text-align: center;
+
 	nav.nav-list {
 		a {
-			color: #fff;
-			font-weight: 200;
+			font-family: 'Roboto', sans-serif;
+			color: #000;
+			text-transform: uppercase;
 			font-size: .75rem;
+			letter-spacing: 0.08em;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 10px;
 			&.title {
-				font-size: 3.25rem;
+				font-family: "essonnes-display", serif;
+				text-align: center;
+				font-size: 3rem;
 				font-weight: 400;
 			}
+		}
+		@include min-screen($xs) {
+			display: none;
+		}
+		@include min-screen($md) {
+			display: block;
+			opacity: 0;
+			-webkit-transition-delay: 0.2s;
+			-moz-transition-delay: 0.2s;
+			-o-transition-delay: 0.2s;
+			transition-delay: 0.2s;
+			a {
+				color: #fff;
+				font-weight: 200;
+				font-size: .75rem;
+				&.title {
+					font-size: 3rem;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	a.mobile-nav {
+		@include min-screen($xs) {
+			color: #fff;
+			left: 20px;
+			text-align: left;
+		}
+		span.hamburger {
+			background-color: #fff;
 		}
 	}
 }
@@ -78,15 +215,22 @@ header.site-header {
 	width: 100%;
 }
 
+.hovered-menu {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+}
+
 header.site-header {
 	&.fixed {
 		line-height: 88px;
 		.scrolled-nav {
 			height: 88px;
 			nav.nav-list {
-				
+				opacity: 1;	
 			}
-		}	
+		}
 	}
 
 }
