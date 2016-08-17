@@ -12,7 +12,7 @@
 		this.bodyContainer = $('body');
 		this.scrollPositionStart = 0;
 		this.defaultLH = parseInt(this.header.css('line-height'));
-		
+
 		navSelf = this;
 
 		this.bindEvents();
@@ -26,7 +26,6 @@
 	fixedNav.prototype.checkSticky = function() {
 		
 		var scrollTop = $(document).scrollTop();
-		var fixedMainNav = this.header.hasClass('fixed');
 
         this.currentLH = parseInt(navSelf.header.css('line-height'));
         this.calculatedLH;

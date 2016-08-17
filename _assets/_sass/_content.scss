@@ -6,11 +6,15 @@
 }
 
 .wrapper {
-	margin-top: 180px;
+	@include min-screen($xs) {
+		margin-top: 130px;
+	}
+	@include min-screen($md) {
+		margin-top: 180px;
+	}
 	overflow: auto;
 	border-top: 1px solid $lightgrey;
 	&.post {
-		// padding: 5% 3%;
 		padding-top: 2.5%;
 		margin: 180px 1% 1.5%;
 	}
@@ -23,60 +27,58 @@ ul.posts {
 	list-style: none;
 	margin-bottom: 2.5%;
 	li.post {
-		width: 30%;
 		margin: 2.5% 1.5% 1.5%;
-		padding: 3% 4%;
-		height: 375px;
-		float: left;
-		opacity: 0;
-		p { 
-			font-size: .65rem; 
-			margin-top: 6%;
-		}
-		a { font-size: 1rem; }
-		&:nth-child(3n+1) {
-			clear: both;
-		}
-		&:nth-child(odd){
-			background-color: rgb(254, 239, 234);
-			a, p {
-				color: rgb(71, 73, 70);
+			padding: 3% 4%;
+			height: 375px;
+			float: left;
+			opacity: 0;
+			p { 
+				font-size: .65rem; 
+				margin-top: 6%;
 			}
-		}
-		&:nth-child(even){
-			background-color: rgb(244, 244, 246);
-			a, p {
-				// color: rgb(244, 244, 246);
-				color: #000;
+			a { font-size: 1rem; }
+			&:nth-child(odd){
+				background-color: rgb(254, 239, 234);
+				a, p {
+					color: rgb(71, 73, 70);
+				}
 			}
-		}
-		&:last-of-type {
-		}
-		// p { 
-		// 	font-size: .75rem; 
-		// 	color: $grey;
-		// }
-		&.fadein {
-			-webkit-animation:fadeIn ease-in 1;
-			-moz-animation:fadeIn ease-in 1;
-			animation:fadeIn ease-in 1;
-		 	-webkit-animation-fill-mode:forwards;
-			-moz-animation-fill-mode:forwards;
-			animation-fill-mode:forwards;
-			-webkit-animation-duration:1s;
-			-moz-animation-duration:1s;
-			animation-duration:1s;
-		}
-		&.food {
-			padding: 0;
-			background-color: red !important;
-			overflow: hidden;
-			img {
-				position: absolute;
-				width: 100%;
-				// height: 100%;
+			&:nth-child(even){
+				background-color: rgb(244, 244, 246);
+				a, p {
+					// color: rgb(244, 244, 246);
+					color: #000;
+				}
 			}
-			a {display: block;}
+			&.fadein {
+				-webkit-animation:fadeIn ease-in 1;
+				-moz-animation:fadeIn ease-in 1;
+				animation:fadeIn ease-in 1;
+			 	-webkit-animation-fill-mode:forwards;
+				-moz-animation-fill-mode:forwards;
+				animation-fill-mode:forwards;
+				-webkit-animation-duration:1s;
+				-moz-animation-duration:1s;
+				animation-duration:1s;
+			}
+			&.food {
+				padding: 0;
+				background-color: red !important;
+				overflow: hidden;
+				img {
+					position: absolute;
+					width: 100%;
+				}
+				a {display: block;}
+			}
+		@include min-screen($xs) {
+			width: 100%;
+		}
+		@include min-screen($md) {
+			width: 47%
+		}
+		@include min-screen($lg) {
+			width: 30%;
 		}
 	}
 }
