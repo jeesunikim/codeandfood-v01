@@ -70,14 +70,14 @@ header.site-header {
 			
 		}
 	}
-	a.mobile-nav {
+	.mobile-nav {
 		@include min-screen($xs) {
 			color: #000;
 		}
 	}
 }
 
-a.mobile-nav {
+.mobile-nav {
 	@include min-screen($xs) {
 		position: absolute;
 		opacity: 1;
@@ -108,7 +108,7 @@ a.mobile-nav {
 			font-weight: 400;
 		}
 		@include min-screen(400px) {
-			left: 30px;
+			left: 25px;
 		}
 	}
 	span.hamburger {
@@ -190,11 +190,14 @@ a.mobile-nav {
 		}
 	}
 
-	a.mobile-nav {
+	.mobile-nav {
 		@include min-screen($xs) {
 			color: #fff;
 			left: 20px;
 			text-align: left;
+		}
+		span.title a{
+			color: #fff;
 		}
 		span.hamburger {
 			background-color: #fff;
@@ -256,6 +259,20 @@ body.hovered {
 			&:first-child {
 				margin-top: 30px;
 			}
+		}
+	}
+	span.hamburger {
+		&.top {
+			transform: rotate(-45deg);
+			top: 7px;
+		}
+		&.middle {
+			// top: 7px;
+			opacity: 0;
+		}
+		&.bottom {
+			top: 7px;
+			transform: rotate(45deg);
 		}
 	}
 }

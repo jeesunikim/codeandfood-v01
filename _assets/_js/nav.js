@@ -12,6 +12,7 @@
 		this.bodyContainer = $('body');
 		this.scrollPositionStart = 0;
 		this.defaultLH = parseInt(this.header.css('line-height'));
+		this.mobile = $('.inner');
 
 		navSelf = this;
 
@@ -81,6 +82,15 @@
 		
 		var nav = new fixedNav();
 		nav.init();
+
+		navSelf.mobile.on('click', function () {
+			// $this = $(this);
+			if ($('body').hasClass('hovered')) { 
+				$('body').removeClass('hovered');
+			} else {
+				$('body').addClass('hovered');
+			}
+		})
 
 	});
 
