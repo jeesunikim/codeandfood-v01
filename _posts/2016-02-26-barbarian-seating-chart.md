@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Barbarian Seating Chart"
-date:   2016-05-14 19:18:20 -0400
+date:   2016-02-26 19:18:20 -0400
 categories: [code, work]
 ---
 

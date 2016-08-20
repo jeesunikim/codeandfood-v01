@@ -6,7 +6,7 @@
 	fixedNav.prototype.init = function () {
 		this.isSticky = false;
 		this.header = $('header');
-		this.mainNav = this.header.find('.site-nav.default nav.nav-list');
+		this.mainNav = this.header.find('.site-nav nav.nav-list');
 		this.box = this.header.find('.box');
 		this.boxTitle = this.box.find('.title');
 		this.bodyContainer = $('body');
@@ -30,8 +30,6 @@
 
 		var scrollTop = $(document).scrollTop();
 
-		console.log(scrollTop, 'scrollTop');
-
 		this.currentLH = parseInt(navSelf.header.css('line-height'));
 		this.calculatedLH;
 
@@ -46,14 +44,16 @@
 				navSelf.box.css('height', this.calculatedBox + 'px');
 				navSelf.boxTitle.css('line-height', this.calculatedBoxTitle + 'px');
 			}
-			if ( scrollTop >= 164 && !this.isSticky ) {
+			if ( scrollTop >= 188 && !this.isSticky ) {
 				this.setSticky();
-			} else if ( scrollTop < 164 && this.isSticky) {
+			} else if ( scrollTop < 188 && this.isSticky) {
 				this.setUnsticky();
 			}
 		} else {
 			this.setUnsticky();
 			navSelf.header.css('line-height', navSelf.defaultLH + 'px');
+			navSelf.box.css('height', navSelf.defaultBox + 'px');
+			navSelf.boxTitle.css('line-height', navSelf.defaultBoxTitle + 'px');
 		}
 	};
 
