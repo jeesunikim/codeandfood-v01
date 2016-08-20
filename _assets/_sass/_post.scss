@@ -3,7 +3,56 @@
 	text-align: center;
 	width: 90%;
 	border: 1px solid $darkgrey4;
-	padding: 5% 0;
-	background-color: $lightgrey;
+	padding: 4%;
+	overflow: auto;
+	background-color: #ffffff; //$lightgrey;
+
 	img { border: 1px solid $darkgrey4; }
+	
+	&.inline > * {
+		width: 45%;
+		margin-right: 5%;
+		float: left;
+		display: inline-block;
+	}
+
+}
+
+.project-description {
+	overflow: auto;
+	padding-bottom: 5%;
+}
+
+.desc {
+	position: relative;
+	width: 50%;
+	float: left;
+	span { display: block; }
+}
+
+ul { list-style: none;}
+
+.gist {
+	span {
+		line-height: 0;
+		margin: 0;
+		font-size: 10px;
+	}
+}
+
+span, p, ul {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 200;
+	line-height: 25px;
+	margin: 2% 0;
+	letter-spacing: 0.08em;
+}
+
+h2 {
+	font-family: "essonnes-display", serif;
+	font-size: 2.25rem;
+	margin-bottom: 4%;
+	font-weight: 400;
+	color: $darkgrey2;
 }

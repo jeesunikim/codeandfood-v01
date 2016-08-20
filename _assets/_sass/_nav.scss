@@ -222,8 +222,7 @@ header.site-header {
 			transition-duration: 1s;
 			transition-timing-function: linear;
 			&:hover {
-				border-bottom: 1px #000 solid;
-				line-height: 50px;
+				color: $grey3;
 			}
 			&.title {
 				font-family: 'futura', sans-serif;
