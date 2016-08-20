@@ -1,6 +1,7 @@
 header.site-header {
+	a { border-bottom: none; }
 	@include min-screen($xs) {
-		padding: 20px;
+		// padding: 22px;
 	}
 	h1 { display: none; }
 	padding: 0;
@@ -8,7 +9,7 @@ header.site-header {
 		line-height: 130px;
 	}
 	@include min-screen($md) {
-		line-height: 180px;
+		line-height: 241px;
 	}
 	width: 100%;
 	margin: 0 auto;
@@ -55,26 +56,28 @@ header.site-header {
 			display: inline-block;
 			vertical-align: middle;
 			margin: 0 10px;
-			transition-property: border-bottom;
-			transition-duration: 1s;
-			transition-timing-function: linear;
 			&:after {
 				opacity: 0;
 				content:""; 
 				background: black; 
 				position: absolute; 
-				bottom: 65px; 
-				left: 27%; 
+				bottom: 90px; 
+				left: 30%; 
 				height: 1px; 
-				width: 43%;
+				width: 37%;
+				// opacity: 1;
+				transition: opacity 0.2s ease-out;
+				-moz-transition: opacity 0.2s ease-out;
+				-o-transition: opacity 0.2s ease-out;
+				-webkit-transition: opacity 0.2s ease-out;
 			}
 			&:hover {
 				&:after {
 					opacity: 1;
-					transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-					-moz-transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-					-o-transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-					-webkit-transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+					transition: opacity 0.4s ease-in;
+					-moz-transition: opacity 0.4s ease-in;
+					-o-transition: opacity 0.4s ease-in;
+					-webkit-transition: opacity 0.4s ease-in;
 				}
 			}
 			&.title {
@@ -225,7 +228,7 @@ header.site-header {
 			&.title {
 				font-family: 'futura', sans-serif;
 				margin-right: 0;
-				line-height: 43px;
+				line-height: 0 !important;
 				margin-left: 0;
 				color: #fff;
 				display: inline-block;
@@ -251,8 +254,8 @@ header.site-header {
 		}
 		.box {
 		  	width: 146px;
-			height: 30px;
 		  	border: 1px solid #fff;
+		  	height: 30px !important;
 		  	padding: 7px 0;
 		  	display: inline-block;
 		  	vertical-align: middle;
@@ -305,7 +308,7 @@ header.site-header {
 header.site-header {
 	&.fixed {
 		line-height: 50px;
-		.site-nav.default {
+		.site-nav {
 			nav.nav-list{
 				opacity: 0;
 			}
@@ -315,6 +318,10 @@ header.site-header {
 			nav.nav-list {
 				line-height:50px;
 				opacity: 1;	
+				-webkit-transition-delay: .4s;
+				-moz-transition-delay: .4s;
+				-o-transition-delay: .4s;
+				transition-delay: .4s;
 			}
 		}
 	}

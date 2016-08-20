@@ -10,6 +10,9 @@ _drafts
 Gemfile.lock
 .ruby-version
 
+# Ignore images
+images/
+
 # Ignore junk files
 .DS_Store
 

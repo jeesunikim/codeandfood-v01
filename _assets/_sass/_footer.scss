@@ -1,10 +1,14 @@
 .footer {
-	background-color: #000;
+	background-color: $grey3;
+	color: $darkgrey2;
 	height: 144px;
 	overflow: auto;
 	width: 100%;
 	position: relative;
 	.container {
+		border-top: 1px solid #000;
+		width: 90%;
+		margin: 0 auto;
 		height: 100%;
 		.copy-left { 
 			float: left; 
@@ -19,7 +23,7 @@
 			transform: translateY(-50%);
 		}
 		a { 
-			color: #fff;
+			color: $darkgrey2;
 			display: inline-block;
 			line-height: 20px;
 			&:nth-child(even) {

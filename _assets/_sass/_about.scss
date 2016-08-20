@@ -3,36 +3,62 @@
 		list-style: none;
 	}
 	.about-label {
-		width: 30%;
+		width: 35%;
 		position: relative;
 		float: left;
-		text-align: right;
 		padding: 5% 0;
-		border-right: 1px solid #000;
-		font-family: "essonnes-display", serif;
-		text-align: center;
-		font-size: 3rem;
-		font-weight: 400;
+		li {
+			font-family: "essonnes-display", serif;
+			font-size: 2.25rem;
+			font-weight: 400;
+			text-align: right;
+			padding: 8% 10% 5%;
+			&:first-child {
+				height: 360px;
+			}
+			&:nth-child(2) {
+				height: 804px;
+			}
+			p { font-size: 13px; }
+		}
 	}
 
 	.about-description {
-		width: 60%;
-		padding-left: 10%;
+		width: 65%;
+		padding-left: 5%;
+		border-left: 1px solid $grey6;
 		float: left;
 		position: relative;
+		.main {
+			padding-bottom: 5%;
+		}
 	}
 
-	h2 {
-		font-family: "essonnes-display", serif;
-		font-size: 2.5rem;
-		font-weight: 400;
+	ul.achievements {
+		li {
+			font-family: 'Roboto', sans-serif;
+			font-size: 13px;
+			font-weight: 200;
+			line-height: 20px;
+			letter-spacing: 0.08em;
+			padding: 17px 0;
+			border-bottom: 1px solid $darkgrey2;
+		}
 	}
-
 	p {
 		font-family: 'Roboto', sans-serif;
 		font-size: 13px;
 		font-weight: 200;
-		margin: 7% 0;
+		line-height: 25px;
+		margin: 2% 0;
 		letter-spacing: 0.08em;
+	}
+
+	h2 {
+		font-family: "essonnes-display", serif;
+		font-size: 2.25rem;
+		margin: 5% 0;
+		font-weight: 400;
+		color: $darkgrey2;
 	}
 }
