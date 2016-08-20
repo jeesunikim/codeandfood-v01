@@ -1,0 +1,38 @@
+.about {
+	ul {
+		list-style: none;
+	}
+	.about-label {
+		width: 30%;
+		position: relative;
+		float: left;
+		text-align: right;
+		padding: 5% 0;
+		border-right: 1px solid #000;
+		font-family: "essonnes-display", serif;
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 400;
+	}
+
+	.about-description {
+		width: 60%;
+		padding-left: 10%;
+		float: left;
+		position: relative;
+	}
+
+	h2 {
+		font-family: "essonnes-display", serif;
+		font-size: 2.5rem;
+		font-weight: 400;
+	}
+
+	p {
+		font-family: 'Roboto', sans-serif;
+		font-size: 13px;
+		font-weight: 200;
+		margin: 7% 0;
+		letter-spacing: 0.08em;
+	}
+}

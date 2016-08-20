@@ -1,6 +1,5 @@
 .page-content, article.post {
 	margin: 0 5% 5%;
-	// top: 50px;
 	overflow: auto;
 	position: relative;
 }
@@ -10,12 +9,12 @@
 		margin-top: 130px;
 	}
 	@include min-screen($md) {
-		margin-top: 180px;
+		margin-top: 220px;
 	}
 	overflow: auto;
-	border-top: 1px solid $lightgrey;
+	border-top: 1px solid #000;
 	&.post {
-		padding-top: 2.5%;
+		padding-top: 5%;
 		margin: 180px 1% 1.5%;
 	}
 }
@@ -31,7 +30,7 @@ ul.posts {
 			padding: 3% 4%;
 			height: 375px;
 			float: left;
-			opacity: 0;
+			opacity: 1;
 			p { 
 				font-size: .65rem; 
 				margin-top: 6%;

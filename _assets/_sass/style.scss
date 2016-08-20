@@ -11,7 +11,10 @@
 @import "reset";
 @import "base";
 
-/* Page CSS */
+/* Layout CSS */
 @import "nav";
 @import "content";
 @import "footer";
+
+/* Page CSS */
+@import "about";
