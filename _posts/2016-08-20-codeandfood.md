@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Notebook 9 Laptop"
+title:  "Code && Food"
 date:   2016-06-03 19:18:20
-categories: [code, work]
+category: code
 ---
 
 <div class="project-description">
@@ -28,7 +28,3 @@ categories: [code, work]
 <div class="project-image">
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/notebook-9-laptop/notebook-9-laptop.png" alt="Notebook 9 Laptop Default Image" />
 </div>
-
-<!-- <div class="project-image">
-	<img src="https://storage.googleapis.com/codeandfood/work/samsung/family-hub-refrigerator/connection-video.gif" alt="family hub refrigerator" />
-</div> -->

@@ -10,7 +10,7 @@ title: code
 	    <a href="{{ post.url }}">
 	      <span>{{ post.title }}</span>
 	      <!-- <span class="meta h4 b">{{ post.date | date: "%A %-d %B %Y" }}</span> -->
-	      {{ post.excerpt }}
+	      <!-- {{ post.excerpt }} -->
 	    </a>
 	  </li>
 	  {% endif %}

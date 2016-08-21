@@ -10,13 +10,15 @@ categories: [code, work]
 	<div class="desc">
 		<span><strong>Date:</strong> April 2016</span>
 		<span><strong>Client:</strong> Samsung</span>
+		<span><strong><a href="http://www.samsung.com/us/explore/family-hub-refrigerator/" target="_blank">Currently Live</a></strong></span>
 	</div>
 	<div class="desc">
 		<span><strong>Tools Used:</strong></span>
 		<ul>
-			<li>JavaScript</li>
-			<li>Greensock</li>
+			<li>JavaScript/jQuery</li>
 			<li>Handlebars.js</li>
+			<li>Greensock</li>
+			<li>SCSS</li>
 		</ul>
 	</div>
 </div>
