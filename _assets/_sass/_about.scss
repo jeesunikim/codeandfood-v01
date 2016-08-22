@@ -25,6 +25,7 @@
 	@include min-screen($md) {
 		h2 { 
 			font-size: 2.25rem;
+			margin-bottom: 5%;
 		}
 		.about-label {
 			width: 20%;
@@ -60,8 +61,11 @@
 		font-size: 13px;
 		font-weight: 200;
 		line-height: 25px;
-		margin: 2% 0;
 		letter-spacing: 0.08em;
+		margin: 7% 0;
+		@include min-screen($md) {
+			margin: 2% 0;
+		}
 	}
 
 	h2,h3 {

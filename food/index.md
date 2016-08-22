@@ -11,5 +11,7 @@ title: food
 	  </a>
   </li>
   {% endif %}
+  {% else %}
+  <h2>Busy cooking..</h2>
 {% endfor %}
 </ul>

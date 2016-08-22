@@ -3,7 +3,7 @@ layout: post
 title:  "Notebook 9 Laptop"
 date:   2016-06-03 19:18:20
 image: https://storage.googleapis.com/codeandfood/work/samsung/notebook-9-laptop/notebook-9-thumbnail.png
-desc: Samsung's Notebook 9 Laptop landing page using JavaScript, Handlebars.js, SCSS, Gulp.
+desc: Notebook 9 Laptop landing page is built on HTML5, JavaScript, Handlebars.js, SCSS, Gulp. It includes scroll controlled animation.
 categories: [code, work]
 ---
 
@@ -24,8 +24,6 @@ categories: [code, work]
 		</ul>
 	</div>
 </div>
-
-
 
 <div class="project-image">
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/notebook-9-laptop/notebook-9-laptop.png" alt="Notebook 9 Laptop Default Image" />

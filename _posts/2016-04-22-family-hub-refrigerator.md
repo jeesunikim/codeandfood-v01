@@ -3,7 +3,7 @@ layout: post
 title:  "Family Hub Refrigerator"
 date:   2016-04-22 19:18:20
 image: https://storage.googleapis.com/codeandfood/work/samsung/family-hub-refrigerator/family-hub-refrigerator-thumb.png
-desc: Samsung's landing page involving Greensock throughout the page
+desc: My first Samsung landing page built on HTML5, JavaScript, Greensock, Handlebars.js, SCSS, Gulp.
 categories: [code, work]
 ---
 

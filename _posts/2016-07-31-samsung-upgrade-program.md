@@ -3,7 +3,7 @@ layout: post
 title:  "Samsung Upgrade Program"
 date:   2016-07-31 19:18:20
 image: https://storage.googleapis.com/codeandfood/work/samsung/samsung-upgrade-program/sup-thumbnail.png
-desc: Samsung Upgrade Program is a static landing page that is written in HTML and SCSS.
+desc: A static landing page that is written in HTML and SCSS. Its one functionality comes from Bootstrap, but it required debugging.
 categories: [code, work]
 ---
 

@@ -12,10 +12,16 @@
 	}
 	
 	&.inline > * {
-		width: 45%;
-		margin-right: 5%;
-		float: left;
-		display: inline-block;
+		@include min-screen($xs) {
+			width: 90%;
+			display: block;
+		}
+		@include min-screen($md) {
+			width: 45%;
+			margin-right: 5%;
+			float: left;
+			display: inline-block;
+		}
 	}
 
 }
