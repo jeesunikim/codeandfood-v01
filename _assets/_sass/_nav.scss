@@ -1,8 +1,5 @@
 header.site-header {
 	a { border-bottom: none; }
-	@include min-screen($xs) {
-		// padding: 22px;
-	}
 	h1 { display: none; }
 	padding: 0;
 	@include min-screen($xs) {
@@ -41,7 +38,7 @@ header.site-header {
 	nav.nav-list{
 		.box {
 		  	width: 146px;
-		  	height: 170px; //auto
+		  	height: 170px;
 		  	border: 3px solid $darkgrey2;
 		  	padding: 7px 0;
 		  	display: inline-block;
@@ -148,25 +145,40 @@ header.site-header {
 		height: 21px;
 		right: 41px;
 		top: 50%;
-		margin-top: -8px;
+		margin-top: -4px;
 		cursor: pointer;
 		@include min-screen(400px) {
 			right: 71px;
 		}
 	}
-	span.title {
-		@include min-screen($xs) {
-			display: block;
-			position: relative;
-			font-family: "essonnes-display", serif;
-			font-size: 1.75rem;
-			text-transform: uppercase;
-			font-weight: 400;
-		}
-		@include min-screen(400px) {
-			left: 25px;
+	span.oneline-box {
+  	width: 146px;
+  	border: 1px solid $darkgrey2;
+  	height: 30px !important;
+  	left: 40px;
+  	margin: 5px 0 0 0;
+  	display: inline-block;
+  	vertical-align: middle;
+  	a.title {
+			@include min-screen($xs) {
+				font-family: 'futura', sans-serif;
+				margin-right: 0;
+				margin-left: 0;
+				display: block;
+				text-align: center;
+				text-transform: uppercase;
+				height: auto;
+				float: none;
+				font-size: 14px;
+				line-height: 30px;
+				font-weight: 400;
+				&:after {
+					bottom: 0; 
+				}
+			}
 		}
 	}
+	
 	span.hamburger {
 		transition: all 0.16s ease-out;
 		-moz-transition: all 0.16s ease-out;
@@ -270,22 +282,12 @@ header.site-header {
 			-moz-transition-delay: 0.2s;
 			-o-transition-delay: 0.2s;
 			transition-delay: 0.2s;
-			// a {
-			// 	color: #fff;
-			// 	font-weight: 200;
-			// 	font-size: .75rem;
-			// 	&.title {
-			// 		font-size: 2.25rem;
-			// 		font-weight: 400;
-			// 	}
-			// }
 		}
 	}
 
 	.mobile-nav {
 		@include min-screen($xs) {
 			color: #fff;
-			left: 20px;
 			text-align: left;
 		}
 		span.title a{
@@ -322,6 +324,12 @@ header.site-header {
 				-o-transition-delay: .4s;
 				transition-delay: .4s;
 			}
+			.oneline-box {
+				border-color: #fff;
+				a.title {
+					color: #fff;
+				}
+			}
 		}
 	}
 }
@@ -331,6 +339,7 @@ header.site-header {
 	display: none;
 	a {
 		opacity: 0;
+		border-bottom: none;
 	}
 }
 

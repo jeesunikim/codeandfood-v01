@@ -4,10 +4,10 @@ title: About
 ---
 <div class="about">
 	<div class="about-label">
-		<ul>
+		<!-- <ul>
 			<li></li>
 			<li> Milestones in My Life </li>
-		</ul>
+		</ul> -->
 	</div>
 
 	<div class="about-description">
@@ -18,15 +18,10 @@ title: About
 				<p>In April of 2015, I enrolled in Fullstack Academy of Code, a part time 6 months long fullstack JavaScript coding bootcamp based in New York City while I was a full time developer at the Barbarian Group.</p>
 				<p>Before my role at the Barbarian Group, I was a developer intern at Crispin Porter + Bogusky.</p>
 		</div>
+		<h3>Important Life Events</h3>
 			<ul class="achievements">
 				<li>
 					<strong>1998: </strong>Built a first website for the movie that I shouldn't have been watching, <a href="http://www.imdb.com/title/tt0117571/?ref_=nv_sr_3" target="_blank">Scream</a>
-				</li>
-				<li>
-					<strong>2000: </strong>Solo danced to BoA's ID: Peace B at a talent show &amp; wanted to become a K-POP star
-				</li>
-				<li>
-					<strong>2000 - 2001: </strong>Never made it as finalist at SM Entertainment Audition so good bye K-POP dream
 				</li>
 				<li>
 					<strong>2001: </strong>Fell in love with America &amp; started begging parents to send me to the USA
@@ -38,7 +33,7 @@ title: About
 					<strong>2003, Summer: </strong>Arrived in Jacksonville, Florida by myself
 				</li>
 				<li>
-					<strong>2003 - 2009: </strong>Improving my English &amp; French along the way at <a href="https://www.sjcds.net/" target="_blank">SJCDS</a>
+					<strong>2003 - 2009: </strong>Improving my English &amp; French along the way
 				</li>
 				<li>
 					<strong>2012: </strong>Took a class on HTML/CSS in my senior year at <a href="http://welcome.miami.edu/" target="_blank">the U</a>
@@ -54,15 +49,6 @@ title: About
 				</li>
 				<li>
 					<strong>2015: </strong>Enrolled in <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy of Code</a> while working full time at TBG
-				</li>
-				<li>
-					<strong>2015, Summer: </strong>One of the projects at Fullstack, BetterBail, made a semi-finalist
-				</li>
-				<li>
-					<strong>2015, Winter: </strong>Final Project for Fullstack, Subnodes, made a finalist at Big Apps NYC
-				</li>
-				<li>
-					<strong>2016, Summer: </strong>TBG sent me to Google I/O - very inspiring
 				</li>
 			</ul>
 	</div>

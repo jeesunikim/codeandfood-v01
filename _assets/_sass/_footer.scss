@@ -10,17 +10,30 @@
 		width: 90%;
 		margin: 0 auto;
 		height: 100%;
+		.copy-left, .copy-right{
+			@include min-screen($xs) {
+				float: none;
+				text-align: center;
+				display: block;
+				top: 22%;
+				margin-bottom: 3%;
+			}
+		}
 		.copy-left { 
-			float: left; 
-			top: 50%;
-			left: 5%;
-			transform: translateY(-50%);
+			@include min-screen($md) {
+				float: left; 
+				top: 50%;
+				left: 5%;
+				transform: translateY(-50%);
+			}
 		}
 		.copy-right { 
-			float: right; 
-			right: 5%;
-			top: 50%;
-			transform: translateY(-50%);
+			@include min-screen($md) {
+				float: right; 
+				right: 5%;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 		}
 		a { 
 			color: $darkgrey2;

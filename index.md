@@ -12,9 +12,7 @@ title: Code && Food
 	  </a>
 		{% else %}
     <a href="{{ post.url }}">
-      <span class="post-image" style="background-image: url('{{ post.image }}')">
-          <!-- <img src="{{ post.image }}" /> -->
-      </span>
+      <span class="post-image" style="background-image: url('{{ post.image }}')"></span>
     </a>
     <div class="post-desc">
       <a href="{{ post.url }}">{{ post.title }}</a>
