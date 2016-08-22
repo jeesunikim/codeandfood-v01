@@ -2,6 +2,8 @@
 layout: post
 title:  "Barbarian Seating Chart"
 date:   2016-02-26 19:18:20
+image: https://storage.googleapis.com/codeandfood/work/tbg/superdesk-thumbnail.png
+desc: Personal project for the Barbarian Group - built on MEAN stack
 categories: [code, work]
 ---
 

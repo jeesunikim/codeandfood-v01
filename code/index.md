@@ -6,7 +6,7 @@ title: code
 {% for post in site.posts %}
 	{% if post.hidden != true %}
 	  {% if post.categories contains 'code' %}
-	  <li data-post="scroll-in-view" class="post {{post.categories}}">
+	  <li class="post {{post.categories}}">
 	    <a href="{{ post.url }}">
 	      <span>{{ post.title }}</span>
 	      <!-- <span class="meta h4 b">{{ post.date | date: "%A %-d %B %Y" }}</span> -->

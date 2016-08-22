@@ -6,4 +6,28 @@ h2, p, span, .footer {
 
 a {
 	text-decoration: none;
+	border-bottom: 1px dotted $darkgrey2;
+}
+
+a.image-url {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+
+span, p, ul {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 200;
+	line-height: 25px;
+	margin: 2% 0;
+	letter-spacing: 0.08em;
+}
+
+h2 {
+	font-family: "essonnes-display", serif;
+	font-size: 2.25rem;
+	margin-bottom: 4%;
+	font-weight: 400;
+	color: $darkgrey2;
 }

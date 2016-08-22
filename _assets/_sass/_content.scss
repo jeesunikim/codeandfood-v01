@@ -27,16 +27,14 @@ ul.posts {
 	margin-bottom: 2.5%;
 	li.post {
 		margin: 2.5% 1.5% 1.5%;
-		padding: 3% 4%;
-		height: 375px;
+		height: 460px;
 		float: left;
 		opacity: 1;
 		background-color: rgb(254, 239, 234);
 		p { 
-			font-size: .65rem; 
-			margin-top: 6%;
+			font-size: 11px; 
+			// margin-top: 6%;
 		}
-		a { font-size: 1rem; }
 		&:nth-child(n){
 			background-color: rgb(254, 239, 234);
 			a, p {
@@ -47,7 +45,6 @@ ul.posts {
 		&:nth-child(2n){
 			background-color: $grey6;
 			a, p {
-				// color: rgb(244, 244, 246);
 				color: #000;
 			}
 		}
@@ -55,7 +52,6 @@ ul.posts {
 		&:nth-child(3n){
 			background-color: rgb(244, 244, 246);
 			a, p {
-				// color: rgb(244, 244, 246);
 				color: #000;
 			}
 		}
