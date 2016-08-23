@@ -32,7 +32,7 @@ categories: [code, work]
 
 <p>I built a basic seating chart for the Barbarian Group using the MEAN stack as an independent project as a student at Fullstack Academy. The majority of the functionality (and refactoring work) present today was done after I left Fullstack.</p>
 
-<p>For our independent projects at Fullstack, the question "what app do you want to build?", was always hard to answer because it seeme like there is already an app for everything. When I did think of one, most of the time I realized someone else had already built it.</p>
+<p>For our independent projects at Fullstack, the question "what app do you want to build?", was always hard to answer because it seemed like there is already an app for everything. When I did think of one, most of the time I realized someone else had already built it.</p>
 
 <p>BUT - no one had built a seating chart app for the Superdesk.</p>
 
