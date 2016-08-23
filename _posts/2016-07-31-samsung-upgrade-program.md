@@ -55,4 +55,4 @@ categories: [code, work]
 	<script src="https://gist.github.com/jeesunikim/ae58ec1186173236ad8c4d8a99f62ac6.js"></script>
 </div>
 
-<p>I used to think that Bootstrap was a hindrance to learning because it makes everything so easy and stayed away from using it. But going through its code line by line, I appreciated its structure and learned how to use OOP better.</p>
+<p>I used to think that Bootstrap was a hindrance to learning because it makes everything so easy. But going through its code line by line, I appreciated its structure and learned how to use OOP better.</p>

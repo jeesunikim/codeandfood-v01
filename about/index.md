@@ -11,10 +11,10 @@ title: About
 				<p>I came up with CODE &amp;&amp; FOOD while I was searching for a new domain to buy. I wanted my new domain to include the word, 'code', but also wanted to include something unrelated to code. I thought of Fullstack Academy of Code's founder, David Yang's quote on JavaScript Function Invocation - that function itself is like a recipe and its invocation is like an actual cooking that brings a result.</p>
 				<p>Code and food share a lot of similarities. One I can think of is that its barrier to entry is easy. People often start learning how to code or cook by copying what others are doing.</p>
 				<p>But its path isn't an easy one. Its difficulty comes in when its 'recipe' is removed from the process. When I began my HTML practice without the 'recipe', how often I made a mistake by typing 'link src' instead of 'link href' in the header. In cooking, I often made a mistake of both heating the meat and chopping the ingrendients at the same time, which often caused the meat to burn.</p>
-				<p>I started this blog to showcase my experiments on coding and cooking - relying less on other people's creation and relying more on my own creativity.</p>
-				<p>But most of all, I hope that - to some people - my blog is the reason how they started to code or(and) cook.</p>
+				<p>I started this blog to showcase my experiments on coding and cooking - relying less on other people's creation and more on my own creativity.</p>
+				<p>But most of all, I hope that this blog inspires you in some way...</p>
 		</div>
-		<h3>Important Life Events</h3>
+		<h3>To be where I am..</h3>
 			<ul class="achievements">
 				<li>
 					<strong>1998: </strong>Built a first website for the movie that I shouldn't have been watching at that age, <a href="http://www.imdb.com/title/tt0117571/?ref_=nv_sr_3" target="_blank">Scream</a>
@@ -23,7 +23,7 @@ title: About
 					<strong>2001: </strong>Fell in love with the USA &amp; started begging parents to send me to the USA
 				</li>
 				<li>
-					<strong>2003: </strong>After two years of begging, parents agreed to finance my journey to/in America
+					<strong>2003: </strong>After two years of begging, parents agreed to finance my journey to/in the USA
 				</li>
 				<li>
 					<strong>2003, Summer: </strong>Arrived in Jacksonville, Florida by myself
@@ -32,7 +32,10 @@ title: About
 					<strong>2003 - 2009: </strong>Improving my English &amp; French along the way
 				</li>
 				<li>
-					<strong>2012: </strong>Took a class on HTML/CSS in my senior year at <a href="http://welcome.miami.edu/" target="_blank">the U</a>
+					<strong>2012, Spring: </strong>Built a site using Dreamweaver in Graphic Design class at <a href="http://welcome.miami.edu/" target="_blank">the U</a>
+				</li>
+				<li>
+					<strong>2012, Fall: </strong>Took a class on HTML/CSS/JS in my senior year at the U</a>
 				</li>
 				<li>
 					<strong>2012 - 2013: </strong>Started making websites for friends and family &amp; taking <a href="https://teamtreehouse.com/" target="_blank">online class</a> on web development
