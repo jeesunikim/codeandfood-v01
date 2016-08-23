@@ -3,7 +3,7 @@ layout: post
 title:  "Samsung Upgrade Program"
 date:   2016-07-31 19:18:20
 image: https://storage.googleapis.com/codeandfood/work/samsung/samsung-upgrade-program/sup-thumbnail.png
-desc: A static landing page that is written in HTML and SCSS. Its one functionality comes from Bootstrap, but it required debugging.
+desc: A static landing page written in HTML and SCSS. The sole page function comes from Bootstrap.
 categories: [code, work]
 ---
 
@@ -32,23 +32,10 @@ categories: [code, work]
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/samsung-upgrade-program/samsung-upgrade-program.png" alt="Samsung Upgrade Program Default Image" />
 </div>
 
-<p>Samsung Upgrade Program is a static landing page that is written in HTML and SCSS. It has bootstrap's <a href="http://v4-alpha.getbootstrap.com/components/collapse/" target="_blank">Collapse</a> functionality for FAQs module. It wasn't difficult to build. Its difficulty came in when the client asked us to remove tagging in expanded state in FAQs module.</p> 
+<p>Samsung Upgrade Program is a static landing page that is written in HTML and SCSS. It has bootstrap's <a href="http://v4-alpha.getbootstrap.com/components/collapse/" target="_blank">Collapse</a> component for the FAQs module. It wasn't difficult to build. The difficulty was introduced when the client asked us to remove tagging in the expanded state.</p> 
 
-<p>Its function would be</p>
-	{% highlight javascript %}
-	if ( a state is expanded ) {
-		remove tagging
-	} else {
-		add the tagging back
-	}
-	{% endhighlight %}
-<p>This is a simple task - but I kept getting a conflict with bootstrap's code. I thought of removing bootstrap javascript code and start building my own collapse javascript from scratch. But given its deadline, I kept the bootstrap and tested each functionality of Bootstrap's collapse.js instead to get the result the client wanted.</p>
+<p>This is a simple task - but I kept getting a conflict when I edited bootstrap's code. I thought of removing the bootstrap javascript and start building my own collapse javascript function from scratch. Given the deadline, I kept the bootstrap and tested each function in Bootstrap's collapse component until I ended up with a result the client was happy with.</p>
 
-<p>I made a mistake of calling my custom function <strong>getAttribute</strong> before</p>
-	{% highlight javascript %}
-	Plugin.call($target, option)
-	{% endhighlight %} 
-<p>which resulted in returning a wrong value for 'aria-expanded'. Once, I moved my custom function after Plugin.call, everything worked out great.</p>
 
 <div class="project-image inline">
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/samsung-upgrade-program/faq.gif" alt="Samsung Upgrade Program FAQ" />

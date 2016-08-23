@@ -3,7 +3,7 @@ layout: post
 title:  "Family Hub Refrigerator"
 date:   2016-04-22 19:18:20
 image: https://storage.googleapis.com/codeandfood/work/samsung/family-hub-refrigerator/family-hub-refrigerator-thumb.png
-desc: My first Samsung landing page built on HTML5, JavaScript, Greensock, Handlebars.js, SCSS, Gulp.
+desc: Samsung landing page built on HTML5, JavaScript, Greensock, Handlebars.js, SCSS, Gulp.
 categories: [code, work]
 ---
 
@@ -31,7 +31,7 @@ categories: [code, work]
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/family-hub-refrigerator/family-hub-refrigerator.png" alt="family hub refrigerator" />
 </div>
 
-<p>Family Hub Refrigerator is my favorite project of all time. It required more functionalities than usual and I was able to use Greensock for the first time on a client project. Initially, it had more animations than what it has on production at the moment.</p>
+<p>Family Hub Refrigerator is my favorite project. It required more functionality than usual and I was able to use Greensock for the first time on a client project. Initially, it had more animations than the version currently live on the Samsung website</p>
 
 <div class="project-image">
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/family-hub-refrigerator/connection-video.gif" alt="family hub refrigerator" />

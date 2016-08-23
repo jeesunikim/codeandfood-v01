@@ -29,12 +29,10 @@ categories: [code, work]
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/notebook-9-laptop/notebook-9-laptop.png" alt="Notebook 9 Laptop Default Image" />
 </div>
 
-<p>Notebook 9 Laptop includes HTML5 video and few jQuery functionalities.</p>
+<p>Notebook 9 Laptop includes HTML5 video and a few jQuery features.</p>
 
-<p>The major functionality was to play a video as a user scrolls near to the video's modules - versatility and battery module. It required addEventListener to watch for user's scroll's movement and play the video if the scroll's scrollTop() gets nearer to the video modules' offsetTop(), play the video.</p>
+<p>The main development task for this page was for video to begin playing as a user scrolls near a module containing a video - with videos being in both the versatility and battery modules. It required addEventListener to watch for user's scroll movements and play the video if the scroll's scrollTop() gets nearer to a video module's offsetTop().</p>
 
 <div class="project-image">
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/notebook-9-laptop/scroll.gif" alt="Notebook 9 Laptop Gif" />
 </div>
-
-<p>Another functionality is to swap the static image with HTML5 video when an user clicks the play button in the video module.</p>

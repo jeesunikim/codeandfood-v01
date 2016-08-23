@@ -7,7 +7,7 @@
 	overflow: auto;
 	background-color: #fff;
 
-	img { 
+	img, iframe { 
 		border: 1px solid $darkgrey4; 
 	}
 	
@@ -17,13 +17,15 @@
 			display: block;
 		}
 		@include min-screen($md) {
-			width: 45%;
-			margin-right: 5%;
+			width: 49%;
+			margin-right: 1%;
 			float: left;
 			display: inline-block;
 		}
 	}
-
+	p {
+		margin-bottom: 0;
+	}
 }
 
 span.post-image {
