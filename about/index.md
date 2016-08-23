@@ -35,7 +35,7 @@ title: About
 					<strong>2012, Spring: </strong>Built a site using Dreamweaver in Graphic Design class at <a href="http://welcome.miami.edu/" target="_blank">The U</a>
 				</li>
 				<li>
-					<strong>2012, Fall: </strong>Took a class on HTML/CSS/JS in my senior year</a>
+					<strong>2012, Fall: </strong>Took a class on HTML/CSS/JS in my senior year
 				</li>
 				<li>
 					<strong>2012 - 2013: </strong>Started making websites for friends and family &amp; taking <a href="https://teamtreehouse.com/" target="_blank">online class</a> on web development
