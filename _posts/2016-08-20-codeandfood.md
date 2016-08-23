@@ -23,10 +23,8 @@ category: code
 	</div>
 </div>
 
-
-
-<div class="project-image">
+<!-- <div class="project-image">
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/notebook-9-laptop/notebook-9-laptop.png" alt="Notebook 9 Laptop Default Image" />
-</div>
+</div> -->
 
 <p>Its navigation code is <a href="http://codepen.io/jeesunikim/pen/yJAjoN" target="_blank">here</a></p>
