@@ -22,6 +22,7 @@
 		.copy-left { 
 			@include min-screen($md) {
 				float: left; 
+				text-align: left;
 				top: 50%;
 				left: 5%;
 				transform: translateY(-50%);
