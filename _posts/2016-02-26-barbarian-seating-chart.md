@@ -36,7 +36,7 @@ categories: [code, work]
 
 <p>BUT - no one had built a seating chart app for the Superdesk.</p>
 
-<p>The Barbarian Group's <a href="http://www.architectmagazine.com/technology/detail/innovative-detail-the-superdesk-at-the-barbarian-group-office_o" target="_blank">Superdesk</a> is pretty famous in the agency and architecture world for its concept, desgin, and frankly, its massiveness.</p>
+<p>The Barbarian Group's <a href="http://www.architectmagazine.com/technology/detail/innovative-detail-the-superdesk-at-the-barbarian-group-office_o" target="_blank">Superdesk</a> is pretty famous in the agency and architecture world for its concept, design, and frankly, its massiveness.</p>
 
 <div class="project-image inline">
 	<img src="https://storage.googleapis.com/codeandfood/work/tbg/desk-01.png" alt="TBG Desk News #1" />
@@ -58,7 +58,7 @@ categories: [code, work]
 	<img src="https://storage.googleapis.com/codeandfood/work/tbg/http-02.png" alt="http request correct way" />
 </div>
 
-<p>The code on the left is the code I wrote as a student. I pretty much put everything in the controller. My controllers at that time were big giant blocks of code without much modularity. I didn't use service at all for no other reason than it worked fine putting them in the controller. But as I read more about angular patterns, I learned that any shared requests that will be used throught out the app need to be put in service, in this case, $http requests.</p>
+<p>The code on the left is the code I wrote as a student. I pretty much put everything in the controller. My controllers at that time were big giant blocks of code without much modularity. I didn't use service at all for no other reason than it worked fine putting them in the controller. But as I read more about angular patterns, I learned that any shared requests that will be used through out the app need to be put in service, in this case, $http requests.</p>
 
 <p>Another problem was the frequent use of $rootScope.</p>
 
@@ -85,5 +85,5 @@ categories: [code, work]
 <p>To protect the Barbarians' privacy, instead of using real names, I used the characters of Mad Men. I am working on deploying this app via google cloud platform. Meanwhile, enjoy the video below and if you see me in person with my laptop, I would love to show it to you in person.</p>
 
 <div class="project-image">
-	<iframe src="https://player.vimeo.com/video/179829826" width="640" height="522" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<iframe src="https://player.vimeo.com/video/179829826" width="100%" height="522" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>

@@ -11,16 +11,22 @@
 		border: 1px solid $darkgrey4; 
 	}
 	
-	&.inline > * {
-		@include min-screen($xs) {
-			width: 90%;
-			display: block;
-		}
-		@include min-screen($md) {
-			width: 49%;
-			margin-right: 1%;
-			float: left;
-			display: inline-block;
+	&.inline {
+		& > * {
+			@include min-screen($xs) {
+				width: 100%;
+				display: block;
+			}
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+			@include min-screen($md) {
+				width: 49%;
+				margin-right: 1%;
+				float: left;
+				display: inline-block;
+				margin-bottom: 0;
+			}
 		}
 	}
 	p {
