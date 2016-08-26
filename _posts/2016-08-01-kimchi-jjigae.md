@@ -3,7 +3,7 @@ layout: post
 title:  "Kimchi Jjigae"
 date:   2016-08-01 19:18:20 -0400
 category: food
-image: "https://storage.googleapis.com/codeandfood/food/kimchi-jjigae/step09.jpg"
+image: "https://storage.googleapis.com/codeandfood/food/kimchi-jjigae/kimchi-jjigae-default.jpg"
 ---
 <div class="project-description">
 	<h2>Kimchi Jjigae</h2>
@@ -53,6 +53,6 @@ image: "https://storage.googleapis.com/codeandfood/food/kimchi-jjigae/step09.jpg
 </div>
 
 <div class="food-image">
-	<img src="https://storage.googleapis.com/codeandfood/food/kimchi-jjigae/step09.jpg" alt="Kimchi Jjigae Step #9" />
+	<img src="https://storage.googleapis.com/codeandfood/food/kimchi-jjigae/kimchi-jjigae-default.jpg" alt="Kimchi Jjigae Step #9" />
 	<p>Done!</p>
 </div>
