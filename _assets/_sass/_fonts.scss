@@ -14,6 +14,16 @@ a.image-url {
 	border-bottom: none;
 }
 
+span, p, h2 {
+	&.korean {
+		font-family: "source-han-sans-korean", sans-serif;
+	}
+}
+
+h2.korean {
+	display: inline-block;
+}
+
 
 span, p, ul {
 	font-family: 'Roboto', sans-serif;
