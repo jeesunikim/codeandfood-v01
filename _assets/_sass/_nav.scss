@@ -78,7 +78,7 @@ header.site-header {
 				}
 			}
 			&.title {
-				font-family: "futura-pt",sans-serif;
+				font-family: futura, "futura-pt",sans-serif;
 				margin-right: 0;
 				margin-left: 0;
 				display: block;
@@ -161,7 +161,7 @@ header.site-header {
   	vertical-align: middle;
   	a.title {
 			@include min-screen($xs) {
-				font-family: "futura-pt",sans-serif;
+				font-family:futura, "futura-pt",sans-serif;
 				margin-right: 0;
 				margin-left: 0;
 				display: block;
@@ -237,7 +237,7 @@ header.site-header {
 				color: $grey3;
 			}
 			&.title {
-				font-family: "futura-pt",sans-serif;
+				font-family: futura, "futura-pt",sans-serif;
 				margin-right: 0;
 				line-height: 0 !important;
 				margin-left: 0;
