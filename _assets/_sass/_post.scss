@@ -1,4 +1,4 @@
-.project-image {
+.project-image, .food-image {
 	margin: 0 auto;
 	text-align: center;
 	width: 90%;
@@ -32,6 +32,15 @@
 	p {
 		margin-bottom: 0;
 	}
+}
+
+.food-image {
+	p {
+		@include min-screen($md) {
+			padding: 0 30px;
+		}
+	}
+	margin-bottom: 20px;
 }
 
 span.post-image {
