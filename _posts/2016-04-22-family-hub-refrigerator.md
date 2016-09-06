@@ -35,5 +35,4 @@ categories: [code, work]
 
 <div class="project-image">
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/family-hub-refrigerator/connection-video.gif" alt="family hub refrigerator" />
-	<script src="https://gist.github.com/jeesunikim/3aca9a3c0832e226c88803c19b4917fb.js"></script>
 </div>
