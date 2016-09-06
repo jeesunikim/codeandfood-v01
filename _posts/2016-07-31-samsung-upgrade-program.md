@@ -37,9 +37,8 @@ categories: [code, work]
 <p>This is a simple task - but I kept getting a conflict when I edited bootstrap's code. I thought of removing the bootstrap javascript and start building my own collapse javascript function from scratch. Given the deadline, I kept the bootstrap and tested each function in Bootstrap's collapse component until I ended up with a result the client was happy with.</p>
 
 
-<div class="project-image inline">
+<div class="project-image">
 	<img src="https://storage.googleapis.com/codeandfood/work/samsung/samsung-upgrade-program/faq.gif" alt="Samsung Upgrade Program FAQ" />
-	<script src="https://gist.github.com/jeesunikim/ae58ec1186173236ad8c4d8a99f62ac6.js"></script>
 </div>
 
 <p>I used to think that Bootstrap was a hindrance to learning because it makes everything so easy. But going through its code line by line, I appreciated its structure and learned how to use OOP better.</p>
