@@ -65,13 +65,16 @@ ul.posts {
 		
 		&.food {
 			padding: 0;
-			background-color: #fff !important;
 			overflow: hidden;
 			img {
 				position: absolute;
 				width: 100%;
 			}
-			a {display: block;}
+			.post-desc {
+				background-color: $darkgrey2;
+				p,a {color: #fff;}
+				a {border-bottom: 1px dotted #fff;}
+			}
 		}
 		@include min-screen($xs) {
 			width: 100%;
