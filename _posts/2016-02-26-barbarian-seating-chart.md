@@ -82,7 +82,7 @@ categories: [code, work]
 	<img src="https://storage.googleapis.com/codeandfood/work/tbg/add-dot-02.png" alt="add dot #2" />
 </div>
 
-<p>To protect the Barbarians' privacy, instead of using real names, I used the names of the characters of Mad Men. I am working on deploying this app via google cloud platform. Meanwhile, you can either install it and interact with it following README on my <a href="https://github.com/jeesunikim/superdesk" target="_blank">github</a></span> or if you are not a developer, enjoy the video below.</p>
+<p>To protect the Barbarians' privacy, instead of using real names, I used the names of the characters of Mad Men. I am working on deploying this app via google cloud platform. Meanwhile, you can either install it and interact with it following README on my <a href="https://github.com/jeesunikim/superdesk" target="_blank">github</a> or if you are not a developer, enjoy the video below.</p>
 
 <div class="project-image">
 	<iframe src="https://player.vimeo.com/video/179829826" width="100%" height="522" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
