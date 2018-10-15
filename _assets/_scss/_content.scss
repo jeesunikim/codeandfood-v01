@@ -7,19 +7,23 @@ article.post {
 
 .wrapper {
 	@include min-screen($xs) {
-		margin-top: 130px;
+		margin-top: 60px;
 	}
 	@include min-screen($md) {
-		margin-top: 240px;
+		max-width: 1440px;
+		width: 100%;
+		margin: 240px auto 0;
 	}
+
 	overflow: auto;
-	border-top: 1px solid #000;
-	&.post {
+
+	&.single-page {
 		@include min-screen($xs) {
-			margin-top: 130px;
+			margin-top: 60px;
 		}
 		padding: 5% 5% 0;
-		margin: 240px 1% 1.5%;
+		margin: 240px auto 1.5%;
+
 		@include min-screen($md) {
 			margin-top: 240px;
 		}
@@ -27,47 +31,32 @@ article.post {
 			margin: 20px 0;
 		}
 	}
-}
 
-a {
-	color: #000;
+	.is--centered {
+		text-align: center;
+	}
 }
 
 ul.posts {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+
 	position: relative;
 	list-style: none;
 	margin-bottom: 2.5%;
+
 	li.post {
 		margin: 2.5% 1.5% 1.5%;
 		height: 460px;
-		float: left;
-		opacity: 1;
 		background-color: rgb(254, 239, 234);
+		max-width: 340px;
+
 		p {
-			font-size: 11px;
-		}
-		&:nth-child(n) {
-			background-color: rgb(254, 239, 234);
-			a,
-			p {
-				color: rgb(71, 73, 70);
-			}
-		}
-
-		&:nth-child(2n) {
-			background-color: $grey6;
-			a,
-			p {
-				color: #000;
-			}
-		}
-
-		&:nth-child(3n) {
-			background-color: rgb(244, 244, 246);
-			a,
-			p {
-				color: #000;
-			}
+			font-size: 12px;
+			line-height: 1.75;
 		}
 
 		&.food {
@@ -83,19 +72,40 @@ ul.posts {
 				a {
 					color: #fff;
 				}
-				a {
-					border-bottom: 1px dotted #fff;
-				}
 			}
 		}
 		@include min-screen($xs) {
 			width: 100%;
+
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 		@include min-screen($md) {
 			width: 47%;
+
+			&:first-child {
+				margin-top: 2.5%;
+			}
 		}
 		@include min-screen($lg) {
-			width: 30%;
+			width: 1 1 300px;
+			transform: translateY(20px);
+			opacity: 0;
+			box-shadow: 0px 2px 7px #bdbdbd;
+			transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+			&.fade-in {
+				cursor: pointer;
+				opacity: 1;
+				transform: translateY(0);
+				transition: all 0.4s;
+			}
+
+			&:hover {
+				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+				0 5px 10px rgba(0, 0, 0, 0.22);
+			}
 		}
 	}
 }
