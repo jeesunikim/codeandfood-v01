@@ -7,6 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
  Write an awesome description for your new site here. You can edit this
  line in _config.yml. It will appear in your document head meta (for
  Google search results) and in your feed.xml site description.
+baseurl: ""
 url: "http://www.codeandfood.com" # the base hostname & protocol for your site
 twitter_username: jeesunikim
 github_username:  jeesunikim
@@ -21,7 +22,7 @@ highlighter: rouge
 # File inclusions/exclusions
 #==============================
 include: [".htaccess"]
-exclude: ["node_modules", "gulpfile.js", "Gemfile", "Gemfile.lock"]
+exclude: ["node_modules", "Gemfile", "Gemfile.lock"]
 
 #==============================
 # Outputting
