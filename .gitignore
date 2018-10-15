@@ -1,6 +1,7 @@
 # Ignore Jekyll generated files
 _site
 _drafts
+assets/js/*.map
 
 # Ignore caches and logs
 .idea/
