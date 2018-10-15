@@ -27,7 +27,4 @@ exclude: ["node_modules", "Gemfile", "Gemfile.lock"]
 #==============================
 # Outputting
 #==============================
-permalink: /:categories/:title
-
-sass:
-    sass_dir: _assets/_scss
+# permalink: /:categories/:title
