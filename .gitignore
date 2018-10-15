@@ -9,7 +9,6 @@ _drafts
 .bundle/
 Gemfile.lock
 .ruby-version
-assets/*
 
 # Ignore images
 images/
