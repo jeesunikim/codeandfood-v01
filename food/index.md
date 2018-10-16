@@ -1,4 +1,5 @@
 ---
+permalink: /food/
 layout: default
 title: food
 ---

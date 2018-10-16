@@ -1,4 +1,5 @@
 ---
+permalink: /code/
 layout: default
 title: code
 ---

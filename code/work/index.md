@@ -1,4 +1,5 @@
 ---
+permalink: /code/work/
 layout: default
 title: work
 ---
