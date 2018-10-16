@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RGB for Good"
+title:  "RBG for Good"
 date:   2018-09-24 19:18:20
 image: https://storage.googleapis.com/codeandfood/work/rbgforgood/rbgforgood_thumbnail.jpg
 desc: A mobile WebAR experience that lets you keep RBG fit, rested, and on top of her game so she can keep going for years to come.
