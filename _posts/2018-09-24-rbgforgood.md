@@ -52,3 +52,8 @@ categories: [code, work]
 <p>Our Technical Director suggested, "It would be cool if we had a camera shutter animation as a transition from the slider to the WebAR experience." Having read <i><strong>SVG Animations</strong></i> by Sarah Drasner, I took this moment as an opportunity to apply what I have learned from the book in this project. First, I drew a vector closed camera shutter state (the end frame) in Illustrator and then applied <i>transform-origin</i> to create an opened shutter state in GSAP. By having both the initial (opened shutter) and the ending frame (closed shutter), I was able to create a shutter animation using TweenMax's <i>fromTo</i>.</p>
 
 <p>When I had some free time at work after the site had already launched, I replaced the static hero image on the desktop version with the 3D model using ThreeJS' <a href="https://threejs.org/docs/#examples/loaders/GLTFLoader" target="_blank">GLTFLoader</a>. Our 3D technical artist had already provided multiple animations within the gltf file, so it was straight forward to implement it. I wanted users to play with our 3D Justice Ginsburg model by clicking and dragging the model across the screen.</p>
+
+<div class="project-image">
+	 <iframe class="is--no-border is--narrow-height" src="https://player.vimeo.com/video/295497507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	 <p>See it live on <a href="https://rbgforgood.com/" target="_blank">https://rbgforgood.com</a></p>
+</div>
