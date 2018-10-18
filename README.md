@@ -7,7 +7,7 @@ I have a separate branch for [gatsby blog](https://www.gatsbyjs.org/), which is 
 If you want to run this site locally:
 
 - `git clone` it somewhere
-- Create a file called `_config.yml` for your own site information
+- Create a file called `_config.yml` with your own site information
 - Run `npm install` to install dependencies
 - Run `npm run start` to run it locally
 - Run `npm run build` for production build
