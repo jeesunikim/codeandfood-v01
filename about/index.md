@@ -15,7 +15,7 @@ title: About
 				<p>I started this blog to showcase my experiments on coding and cooking - relying less on other people's recipes and more on my own creativity.</p>
 				<p>But most of all, I hope that this blog helps someone in some way.</p>
 		</div>
-		<h3>To be where I am.. or TL;DR &ndash; CV</h3>
+		<h3>To be where I am..</h3>
 		<ul class="achievements">
 			<li>
 				<strong>1998: </strong>Built a first website for the movie that I shouldn't have been watching at that age, <a href="http://www.imdb.com/title/tt0117571/?ref_=nv_sr_3" target="_blank">Scream</a>
