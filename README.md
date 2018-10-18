@@ -1,5 +1,5 @@
 # codeandfood.com
-This is my personal [blog](https://www.codeandfood.com) where I'll be sharing projects, codes, and recipes. Using Jekyll for as a blog platform was inspired by [Dan Eden](https://github.com/daneden/daneden.me/).
+This is my personal [blog](https://www.codeandfood.com) where I'll be sharing projects, codes, and recipes. Using Jekyll as a blog platform was inspired by [Dan Eden](https://github.com/daneden/daneden.me/).
 
 I have a separate branch for gatsby blog, which is work in progress.
  
