@@ -1,18 +1,17 @@
 # codeandfood.com
-This is my personal [portfolio and blog](http://codeandfood.com) where I'll be sharing projects, codes, recipes, and travel blogs. Why did I use Jekyll for my blog? Because [Dan Eden](https://github.com/daneden/daneden.me/) used Jekyll.
+This is my personal [blog](https://www.codeandfood.com) where I'll be sharing projects, codes, and recipes. Using Jekyll for as a blog platform was inspired by [Dan Eden](https://github.com/daneden/daneden.me/).
+
+I have a separate branch for gatsby blog, which is work in progress.
  
 ## Installation
 If you want to run this site locally:
 
 - `git clone` it somewhere
-- Create a file called `_config_local.yml` with the following contents:
-  ```
-  production: false
-  ```
-- Run `npm install` and then `gulp`
-- Party.
-
-If you're running this site in production, you'll obviously need to change `_config_local.yml` to read `production: true`.
+- Create a file called `_config.yml` for your own site information
+- Run `npm install` to install dependencies
+- Run `npm run start` to run it locally
+- Run `npm run build` for production build
+- :star2: :dizzy:
 
 ## Who This Repo is For
-This repo is mostly for me. I, like many of you, host my code on GitHub for reasons of portability, ease of work, and peace of mind. Beyond my own needs, I have also open-sourced this repo for you, the reader (and most likely developer), to explore the things that make my site tick.
+This repo has grown a lot since I first created in 2016. I had some real bad codes in here and I'm sure my future self would look at my current code and say 'wow, I have grown a lot.' This repo is mostly for me to see my progress as a coder. Beyond that, if someone finds this repo helpful in some way, that would be super cool too :blush:.
