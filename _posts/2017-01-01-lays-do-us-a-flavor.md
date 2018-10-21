@@ -16,7 +16,7 @@ categories: [code, work]
 		<span><strong>Type:</strong> <a href="https://work.firstborn.com/work/318/lays" target="_blank">Archived Project</a></span>
 	</div>
 	<div class="desc">
-		<span><strong>Tools Used:</strong></span>
+		<span><strong>Tool(s) Used:</strong></span>
 		<ul>
 			<li>JavaScript &ndash; Vanilla</li>
 			<li>React</li>

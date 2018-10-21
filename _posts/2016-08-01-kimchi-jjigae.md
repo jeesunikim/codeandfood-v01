@@ -57,5 +57,5 @@ category: [food]
 <p class="is--centered"><strong>Step #9:</strong> Pour the soup into a pretty bowl for a picture.</p>
 
 <div class="food-image">
-	<img src="https://storage.googleapis.com/codeandfood/food/kimchi-jjigae/kimchi-jjigae-default.jpg" alt="Kimchi Jjigae Step #9" />
+	<img class="is--vertical" src="https://storage.googleapis.com/codeandfood/food/kimchi-jjigae/kimchi-jjigae-default.jpg" alt="Kimchi Jjigae Step #9" />
 </div>

@@ -15,7 +15,7 @@ categories: [code, work]
 		<span><strong>Type:</strong> Archived Project</span>
 	</div>
 	<div class="desc">
-		<span><strong>Tools Used:</strong></span>
+		<span><strong>Tool(s) Used:</strong></span>
 		<ul>
 			<li>JavaScript &ndash; jQuery</li>
 			<li>Handlebars.js</li>

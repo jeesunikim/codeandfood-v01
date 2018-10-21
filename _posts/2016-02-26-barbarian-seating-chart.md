@@ -16,7 +16,7 @@ categories: [code, work]
 		<span><strong>Code Source:</strong> <a href="https://github.com/jeesunikim/superdesk" target="_blank">Github</a></span>
 	</div>
 	<div class="desc">
-		<span><strong>Tools Used:</strong></span>
+		<span><strong>Tool(s) Used:</strong></span>
 		<ul>
 			<li>MongoDB</li>
 			<li>Express</li>

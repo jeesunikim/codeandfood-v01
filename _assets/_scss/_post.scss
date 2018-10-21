@@ -15,6 +15,10 @@
 		background-color: $darkgrey2;
 	}
 
+	.is--vertical {
+		max-width: 400px;
+	}
+
 	img,
 	iframe {
 		border: 1px solid $darkgrey4;
@@ -66,10 +70,8 @@
 	&.inline {
 		flex-wrap: wrap;
 
-		& > * {
-			@include min-screen($xs) {
-				display: block;
-			}
+		img:first-child {
+			margin-bottom: 10px;
 		}
 
 		.is--phone, .is--tablet {
@@ -84,6 +86,15 @@
 		@include min-screen($md) {
 			flex-direction: row;
 			align-items: center;
+
+			& > img {
+				width: 49%;
+				max-width: 400px;
+			}
+
+			img:first-child {
+				margin-bottom: 0;
+			}
 
 			.is--tablet {
 				max-width: 600px;
