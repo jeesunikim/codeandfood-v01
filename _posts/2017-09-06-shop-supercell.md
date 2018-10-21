@@ -16,7 +16,7 @@ categories: [code, work]
 		<span><strong><a href="https://shop.supercell.com/" target="_blank">SEE IT LIVE</a></strong></span>
 	</div>
 	<div class="desc">
-		<span><strong>Tools Used:</strong></span>
+		<span><strong>Tool(s) Used:</strong></span>
 		<ul>
 			<li>JavaScript &ndash; Vanilla, ES6</li>
 			<li>Preact</li>
