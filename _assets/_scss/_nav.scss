@@ -65,6 +65,7 @@ nav.nav-list {
 		display: inline-block;
 		vertical-align: middle;
 		background: transparent;
+		align-self: center;
 		transition: background 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 		-moz-transition: background 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 		-o-transition: background 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
@@ -145,31 +146,27 @@ nav.nav-list {
 				bottom: 0;
 			}
 		}
-
-		&.submenu {
-			top: 50%;
-			transform: translateY(-50%);
-			-moz-transform: translateY(-50%);
-			-o-transform: translateY(-50%);
-			-webkit-transform: translateY(-50%);
-			position: absolute;
-			&:first-child {
-				left: 30%;
-			}
-			&:last-of-type {
-				right: 30%;
-			}
-		}
 	}
 	@include min-screen($xs) {
 		display: none;
 	}
 	@include min-screen($md) {
-		display: block;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
 		opacity: 1;
 		text-align: center;
 		position: relative;
 		width: 100%;
+
+		.side {
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			flex: 2;
+		}
+
 		a {
 			color: $darkgrey2;
 		}
@@ -264,6 +261,15 @@ nav.nav-list {
 	text-align: center;
 
 	nav.nav-list {
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		flex: 2;
+		.side {
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			flex: 2;
+		}
 		a {
 			color: $darkgrey2;
 			font-family: "Roboto", sans-serif;
@@ -291,21 +297,6 @@ nav.nav-list {
 				text-align: center;
 				height: 37px;
 			}
-			&.submenu {
-				top: 50%;
-				transform: translateY(-50%);
-				-moz-transform: translateY(-50%);
-				-o-transform: translateY(-50%);
-				-webkit-transform: translateY(-50%);
-				position: absolute;
-				margin: 0 10px;
-				&:first-child {
-					left: 30%;
-				}
-				&:last-of-type {
-					right: 30%;
-				}
-			}
 		}
 		.box {
 			width: 146px;
@@ -320,7 +311,7 @@ nav.nav-list {
 			display: none;
 		}
 		@include min-screen($md) {
-			display: block;
+			display: flex;
 			opacity: 0;
 			-webkit-transition-delay: 0.2s;
 			-moz-transition-delay: 0.2s;
