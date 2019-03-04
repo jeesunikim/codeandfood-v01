@@ -56,7 +56,7 @@ categories: [code, lab]
 
 <div class="project-image">
 	<script src="https://gist.github.com/jeesunikim/493827756bbc78308a5a97fd2b348eb5.js"></script>
-	<span>Snippet not loading? Click <a href="" target="_blank">here</a> to see the code</span>
+	<span>Snippet not loading? Click <a href="https://gist.github.com/jeesunikim/493827756bbc78308a5a97fd2b348eb5" target="_blank">here</a> to see the code</span>
 </div>
 
 <p><i>toCreateOuterHead()</i> is used to create the Sunflower's spiral pattern. <i>radians(137.5)</i> is the magic number. This formula is the planar model that can be found in this <a href="http://algorithmicbotany.org/papers/abop/abop-ch4.pdf" target="_blank">document</a> on page 2 to create Phyllotaxis. More in-depth tutorial on Phyllotaxis can be found <a href="https://www.youtube.com/watch?v=KWoJgHFYWxY" target="_blank">here</a> by Daniel Shiffman.</p>
@@ -68,6 +68,7 @@ categories: [code, lab]
 <h3>3. Creating Sunflower Petals</h3>
 <div class="project-image">
 	<script src="https://gist.github.com/jeesunikim/c8b5ddb3cee02ce54603fab171403ba5.js"></script>
+	<span>Snippet not loading? Click <a href="https://gist.github.com/jeesunikim/c8b5ddb3cee02ce54603fab171403ba5" target="_blank">here</a> to see the code</span>
 </div>
 
 <p>class <i>SunflowerPetals</i> is the blue print of our petals. Later in our <i>setup()</i>, we are going to pass the sunflower head's magnitude (length) into our newly created SunflowerPetals instance to position the petals correctly around its sunflower head. In between <i>beginShape()</i> and <i>endShape()</i>, we can set any number of arbitrary vertices. You can set vertex or any kind of vertex over and over again. In <i>createPetals()</i>, we are calling <i>drawPetal()</i> to draw around the circle. We are converting from Polar Coordinates (r,θ) to Cartesian Coordinates (x,y) to draw vertices around the circle. Curves require additional points that control the entry and exit of the curve. We have <i>vertex(0, 0)</i> in the beginning because all shapes created with beginShape() must start with a <i>vertex()</i> to define the starting point of the shape.</p>
@@ -79,7 +80,7 @@ categories: [code, lab]
 <h3>4. Its Setup</h3>
 <div class="project-image">
 	<script src="https://gist.github.com/jeesunikim/874286fad0d03032eede55439861eb73.js"></script>
-	<span>Snippet not loading? Click <a href="" target="_blank">here</a> to see the code</span>
+	<span>Snippet not loading? Click <a href="https://gist.github.com/jeesunikim/874286fad0d03032eede55439861eb73" target="_blank">here</a> to see the code</span>
 </div>
 <p>This is where we declare <i>SunflowerSeeds</i> and <i>Petals</i> variables and assign them a new instance of the classes that we have created &ndash; <i>SunflowerSeedsSystem</i> and <i>SunflowerPetals</i>. It's important that we call <i>Petals()</i> after <i>SunflowerSeeds()</i> to pass in the correct Seeds (or Sunflower Head) magnitutde.</p>
 
