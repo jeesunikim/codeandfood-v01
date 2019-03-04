@@ -10,7 +10,9 @@ If you want to run this site locally:
 - Create a file called `_config.yml` with your own site information
 - Run `npm install` to install dependencies
 - Run `npm run start` to run it locally
-- Run `npm run build` for production build
+- Run `jekyll serve` to get your posts generated locally
+- Run `npm run build` for production
+- Run `jekyll build` to get your posts generated for production
 - :star2::dizzy:
 
 ## Who This Repo is For
