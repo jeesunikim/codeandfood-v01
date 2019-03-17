@@ -1,147 +1,171 @@
-import TweenLite from 'gsap/TweenLite'
-import 'gsap/EasePack'
+import TweenLite from "gsap/TweenLite";
+import "gsap/EasePack";
 import axios from "axios";
+import AsyncGist from "./asyncGist";
 
-const 
-	ANIMATION_TIME = 0.25,
-	GRID_DELAY_TIME = 150;
-
+const ANIMATION_TIME = 0.25,
+    GRID_DELAY_TIME = 150;
 
 export default class PageAnimation {
-	constructor() {
-		this.contentContainer = document.querySelector(".js-ajax-wrapper");
-		this.navLinks = document.querySelectorAll(".nav-list a");
-		this.posts = this.contentContainer.querySelectorAll(".post");
-		this.maskEl = document.querySelector(".mask");
-		this.maskEl.style.opacity = 0;
+    constructor(el) {
+        this.el = el;
+        this.navLinks = document.querySelectorAll(".nav-list a");
+        this.posts = el.querySelectorAll(".post");
+        this.maskEl = document.querySelector(".mask");
+        this.maskEl.style.opacity = 0;
 
-		this.isPageUpdated = false;
-		this.isMasking = false;
+        this.isPageUpdated = false;
+        this.isMasking = false;
 
-		this.onPopState = this.onPopState.bind(this);
-		
-		this.animateGrids(this.posts);
-		this.attachListeners();
-	}
+        this.onPopState = this.onPopState.bind(this);
+    }
 
-	attachListeners() {
-		this.navLinks.forEach(link => {
-			link.addEventListener("click", (event) => this.loadPushState(event, link));
-		});
+    init() {
+        this.animateGrids(this.posts);
+        this.attachListeners();
+    }
 
-		this.posts.forEach(post => {
-			post.addEventListener("click", (event) => this.loadPushState(event, post));
-		});
+    attachListeners() {
+        this.navLinks.forEach(link => {
+            link.addEventListener("click", event =>
+                this.loadPushState(event, link)
+            );
+        });
 
-		window.addEventListener("popstate", this.onPopState);
-	}
+        this.posts.forEach(post => {
+            post.addEventListener("click", event =>
+                this.loadPushState(event, post)
+            );
+        });
 
-	loadPushState(event, link) {
-		event.preventDefault();
+        window.addEventListener("popstate", this.onPopState);
+    }
 
-		let pageTitle = link.getAttribute("data-title"),
-			pageUrl = link.href || link.getAttribute("data-url");
+    loadPushState(event, link) {
+        event.preventDefault();
 
-		if(window.location === pageUrl) {
-			return;
-		}
-		window.document.title = pageTitle;
-		window.history.pushState({}, pageTitle, pageUrl);
-		this.loadContent(pageUrl);
-	}
+        let pageTitle = link.getAttribute("data-title"),
+            pageUrl = link.href || link.getAttribute("data-url");
 
-	async loadContent(url) {
-		try {
-			const response = await axios.get(url, {
-				headers: {'X-Requested-With': 'XMLHttpRequest'},
-				responseType: 'document',
-				transformResponse: axios.defaults.transformResponse.concat( (data, headers) => {
-					const content = data.querySelector(".js-ajax-wrapper");
+        if (window.location === pageUrl) {
+            return;
+        }
+        window.document.title = pageTitle;
+        window.history.pushState({}, pageTitle, pageUrl);
+        this.loadContent(pageUrl);
+    }
 
-					return content;
-		          })
-			});
-			
-			window.scrollTo(0,0);
+    async loadContent(url) {
+        try {
+            const response = await axios.get(url, {
+                headers: { "X-Requested-With": "XMLHttpRequest" },
+                responseType: "document",
+                transformResponse: axios.defaults.transformResponse.concat(
+                    (data, headers) => {
+                        const content = data.querySelector(".js-ajax-wrapper");
 
-			this.isPageUpdated = true;			
-			this.contentContainer.innerHTML = response.data.innerHTML;
-			
-			let posts = this.contentContainer.querySelectorAll(".post"),
-				singlePage = this.contentContainer.querySelector(".single-page");
+                        return content;
+                    }
+                )
+            });
 
-			if(posts.length > 0) {
-				this.animateGrids(posts);
-				this.posts = posts;
+            window.scrollTo(0, 0);
 
-				this.posts.forEach(post => {
-					post.addEventListener("click", (event) => this.loadPushState(event, post));
-				});
-			} else {
-				this.onPageTransition(singlePage);
-			}
-		} catch (error) {
-			console.error(error)
-		}
-	}
+            this.isPageUpdated = true;
+            this.el.innerHTML = response.data.innerHTML;
 
-	onPageTransition(pageData) {
-		if(!this.isMasking) {
-			this.isMasking = true;
+            let posts = this.el.querySelectorAll(".post"),
+                singlePage = this.el.querySelector(".single-page");
 
-			this.maskEl.style.display = 'block';
-			this.maskEl.style.opacity = 1;
+            if (posts.length > 0) {
+                this.animateGrids(posts);
+                this.posts = posts;
 
-			this.tweenMask(1, () => {
-				this.isMasking = false;
+                this.posts.forEach(post => {
+                    post.addEventListener("click", event =>
+                        this.loadPushState(event, post)
+                    );
+                });
+            } else {
+                this.onPageTransition(singlePage);
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
-				if(pageData) {
-					this.displayPage();
-				}
-			})
-		}
-	}
+    onPageTransition(pageData) {
+        const gistEls = document.querySelectorAll("code[data-type='gist']");
 
-	displayPage() {
-		if(this.isMasking) {
-			return;
-		}
+        if (!this.isMasking) {
+            this.isMasking = true;
+            this.maskEl.style.display = "block";
+            this.maskEl.style.opacity = 1;
 
-		this.tweenMask(0, () => {
-			this.maskEl.style.display = 'none';
-		});
-	}
+            this.tweenMask(1, () => {
+                this.isMasking = false;
 
-	tweenMask(dest, callback) {
-		let ease;
+                if (pageData) {
+                    this.displayPage();
+                    if (gistEls) {
+                        gistEls.forEach(el => {
+                            const projectContainer = el.closest(
+                                ".project-image"
+                            );
+                            if (el.attributes.gist) {
+                                const gistURL = el.attributes.gist.value;
+                                const AsyncGistInstance = new AsyncGist();
+                                AsyncGistInstance.loadContent(
+                                    gistURL,
+                                    projectContainer
+                                );
+                            }
+                        });
+                    }
+                }
+            });
+        }
+    }
 
-		if(dest > 0) {
-			ease = Cubic.easeOut;
-		} else {
-			ease = Cubic.easeIn;
-		}
+    displayPage() {
+        if (this.isMasking) {
+            return;
+        }
 
-		TweenLite.to(this.maskEl.style, ANIMATION_TIME, {
-			opacity: dest,
-			ease: ease,
-			onComplete: () => {
-				callback();
-			}
-		});
+        this.tweenMask(0, () => {
+            this.maskEl.style.display = "none";
+        });
+    }
 
-	}
+    tweenMask(dest, callback) {
+        let ease;
 
-	onPopState() {
-		if(this.isPageUpdated) {
-			this.loadContent(window.location.href);
-		}
-	}
+        if (dest > 0) {
+            ease = Cubic.easeOut;
+        } else {
+            ease = Cubic.easeIn;
+        }
 
-	animateGrids(posts) {
-		posts.forEach((post, index) => {
-			setTimeout(() => {
-				post.classList.add("fade-in");
-			}, index * GRID_DELAY_TIME)
-		})
-	}
+        TweenLite.to(this.maskEl.style, ANIMATION_TIME, {
+            opacity: dest,
+            ease: ease,
+            onComplete: () => {
+                callback();
+            }
+        });
+    }
+
+    onPopState() {
+        if (this.isPageUpdated) {
+            this.loadContent(window.location.href);
+        }
+    }
+
+    animateGrids(posts) {
+        posts.forEach((post, index) => {
+            setTimeout(() => {
+                post.classList.add("fade-in");
+            }, index * GRID_DELAY_TIME);
+        });
+    }
 }
