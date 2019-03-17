@@ -3,17 +3,15 @@ import StickyNav from "./components/stickyNav";
 import PageAnimation from "./components/pageAnimation";
 
 class CodeandFood {
-	constructor() {
-		this.StickyNav = new StickyNav();
-		this.PageAnimation = new PageAnimation();
+    constructor() {
+        const navigationEl = document.querySelector(".site-header");
+        const contentContainerEl = document.querySelector(".js-ajax-wrapper");
+        const StickyNavInstance = new StickyNav(navigationEl);
+        const PageAnimationInstance = new PageAnimation(contentContainerEl);
 
-		this.init();
-		// console.log('GridAnimation: ', GridAnimation)
-	}
-
-	init() {
-
-	}
+        StickyNavInstance.init();
+        PageAnimationInstance.init();
+    }
 }
 
 const app = new CodeandFood();

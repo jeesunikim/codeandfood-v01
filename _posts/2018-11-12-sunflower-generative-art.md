@@ -44,7 +44,8 @@ categories: [code, lab]
 <p>As you can see in the picture of a sunflower head, not all seeds have the same shape. I simplified and grouped them into 3. The core inner part has the triangular shape seeds that are pointing towards the center (I made it less pointy in the code because I liked the look of it better), its surrounding inner area has a rounded square shape, and its border seeds have starfish shapes. In order to mimic these variety of shapes with just numbers, I used <a href="http://paulbourke.net/geometry/supershape/" target="_blank">Supershapes Formula</a> by Paul Bourke. Given certain input number value, this formula can mimic natural forms. If you would like to know more about 2D Supershapes, the link to the video tutorial by Daniel Shiffman is <a href="https://www.youtube.com/watch?v=ksRoh-10lak" target="_blank">here</a>.</p>
 
 <div class="project-image">
-	<script src="https://gist.github.com/jeesunikim/d2227ce4d314c9fd18f22b775610a10c.js"></script>
+	<code data-type="gist" gist="https://gist.github.com/jeesunikim/d2227ce4d314c9fd18f22b775610a10c.json"></code>
+	<div class="gist-preview"></div>
 	<span>Code Snippet not loading? Click <a href="https://gist.github.com/jeesunikim/d2227ce4d314c9fd18f22b775610a10c" target="_blank">here</a> to see the code</span>
 </div>
 
@@ -55,7 +56,8 @@ categories: [code, lab]
 <p>As I mentioned earlier, array is fixed in Java so I set the maximum size <i>2800</i> when creating the array. <i>toCreateInnerHead()</i> is where I am storing a new instance of the <i>SunflowerSeed</i> class as each array's value &ndash; a total of 2800 seeds. We are passing number values as parameters to create the shape that we want. Its core inner seeds are using asymmetric forms with a value of <strong>n1 = 60, n2 = 55, n3 = 30, and m = 1</strong>. Its surrounding inner area is using a value of <strong>n1 = n2 = n3 = 1 and m = 2</strong> to add rotational symmetry to the shape. Its border seeds are using values that create starfish shapes <strong>n1 = 0.1, n2 = 1.7, n3 = 1.7, and m = 5</strong>. You can see more shapes using different numbers in Paul Bourke's article that I mentioned previously.</p>
 
 <div class="project-image">
-	<script src="https://gist.github.com/jeesunikim/493827756bbc78308a5a97fd2b348eb5.js"></script>
+	<code data-type="gist" gist="https://gist.github.com/jeesunikim/493827756bbc78308a5a97fd2b348eb5.json"></code>
+	<div class="gist-preview"></div>
 	<span>Snippet not loading? Click <a href="https://gist.github.com/jeesunikim/493827756bbc78308a5a97fd2b348eb5" target="_blank">here</a> to see the code</span>
 </div>
 
@@ -67,7 +69,8 @@ categories: [code, lab]
 
 <h3>3. Creating Sunflower Petals</h3>
 <div class="project-image">
-	<script src="https://gist.github.com/jeesunikim/c8b5ddb3cee02ce54603fab171403ba5.js"></script>
+	<code data-type="gist" gist="https://gist.github.com/jeesunikim/c8b5ddb3cee02ce54603fab171403ba5.json"></code>
+	<div class="gist-preview"></div>
 	<span>Snippet not loading? Click <a href="https://gist.github.com/jeesunikim/c8b5ddb3cee02ce54603fab171403ba5" target="_blank">here</a> to see the code</span>
 </div>
 
@@ -79,7 +82,8 @@ categories: [code, lab]
 <i><strong>bezierVertex(100, 30 * noise(frameCount + 3), 50, 30 * noise(frameCount + 1), 0, 0);</strong></i></p>
 <h3>4. Its Setup</h3>
 <div class="project-image">
-	<script src="https://gist.github.com/jeesunikim/874286fad0d03032eede55439861eb73.js"></script>
+	<code data-type="gist" gist="https://gist.github.com/jeesunikim/874286fad0d03032eede55439861eb73.json"></code>
+	<div class="gist-preview"></div>
 	<span>Snippet not loading? Click <a href="https://gist.github.com/jeesunikim/874286fad0d03032eede55439861eb73" target="_blank">here</a> to see the code</span>
 </div>
 <p>This is where we declare <i>SunflowerSeeds</i> and <i>Petals</i> variables and assign them a new instance of the classes that we have created &ndash; <i>SunflowerSeedsSystem</i> and <i>SunflowerPetals</i>. It's important that we call <i>Petals()</i> after <i>SunflowerSeeds()</i> to pass in the correct Seeds (or Sunflower Head) magnitutde.</p>
