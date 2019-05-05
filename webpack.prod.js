@@ -1,15 +1,10 @@
-const path = require("path");
-const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const merge = require("webpack-merge");
+const common = require("./webpack.common.js");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
-module.exports = {
+module.exports = merge(common, {
     mode: "production",
-    entry: "./_assets/_js/index.js",
-    output: {
-        filename: "js/app.bundle.js",
-        path: path.resolve(__dirname, "assets/")
-    },
     optimization: {
         minimizer: [
             new OptimizeCSSAssetsPlugin({}),
@@ -22,28 +17,5 @@ module.exports = {
                 }
             })
         ]
-    },
-
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                include: [path.resolve(__dirname, "./_assets/_js")],
-                exclude: /node_modules/,
-                loader: "babel-loader"
-            },
-            {
-                test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-            }
-        ]
-    },
-    resolve: {
-        modules: ["node_modules", path.resolve(__dirname, "_assets/_js")]
-    },
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: "css/style.css"
-        })
-    ]
-};
+    }
+});
