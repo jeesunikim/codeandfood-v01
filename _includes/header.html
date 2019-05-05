@@ -11,6 +11,11 @@
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
+        <!-— twitter card tags additive with the og: tags -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@codeandfood" />
+        <meta name="twitter:creator" content="@codeandfood" />
+
         <!-— facebook open graph tags -->
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="article">
@@ -21,14 +26,6 @@
         <meta property="og:image" content="{{ page.image }}">
         <meta property="og:image:width" content="637" />
         <meta property="og:image:height" content="403" />
-
-        <!-— twitter card tags additive with the og: tags -->
-        <meta name="twitter:card" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-        <meta name="twitter:domain" value="{{ site.url }}" />
-        <meta name="twitter:title" value="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-        <meta name="twitter:description" value="{% if page.desc %}{{ page.desc }}{% else %}{{ site.description }}{% endif %}" />
-        <meta name="twitter:image" content="{{ page.image }}" />
-        <meta name="twitter:url" value="{{ site.url }}{{ page.url }}" />
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600" rel="stylesheet">
