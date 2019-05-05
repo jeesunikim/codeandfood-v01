@@ -14,6 +14,9 @@ title: About
 		<p>The more I think about it, code and food share a lot of similarities. First, its barrier to entry is easy. Second, people often start learning how to code or cook by copying what others are doing.</p>
 		<p>But continuing down the path is more difficult. For both, the challenge comes when the 'recipe' is removed from the process. When I began writing HTML without the 'recipe', I commonly made the mistake of typing 'link src' instead of 'link href' in the head element. When I began cooking without a recipe, it had taken a few times before I gained a feel for using heat effectively to cook my ingredients to the desired result.</p>
 		<p>I started this blog to showcase my experiments on coding and cooking - relying less on other people's recipes and more on my own creativity.</p>
+		<h3>This site is using <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, HTML, SCSS, JS</h3>
+		<p>If you are interested in exploring my current blog's structure, I've open-sourced it <a href="https://github.com/jeesunikim/codeandfood-v01" target="_blank">here</a>.</p>
+		<p>I am in the process of moving my blog to Gatsby + Netlify. More updates on that coming soon!</p>
     	<h3>To be where I am..</h3>
     	<ul class="achievements">
     		<li>
