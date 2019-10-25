@@ -25,7 +25,7 @@ title: About
     			<strong>2003, Summer: </strong>Came to the United States as an international student by myself (유학생)
     		</li>
     		<li>
-    			<strong>2013, Spring: </strong>Graduated the University of Miami
+    			<strong>2013, Spring: </strong>Graduated from the University of Miami
     		</li>
     		<li>
     			<strong>2014, Spring: </strong>Frontend Developer intern at <a href="http://www.cpbgroup.com/" target="_blank">CP+B</a>.
