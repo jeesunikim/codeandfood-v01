@@ -15,48 +15,29 @@ title: About
 		<p>But continuing down the path is more difficult. For both, the challenge comes when the 'recipe' is removed from the process. When I began writing HTML without the 'recipe', I commonly made the mistake of typing 'link src' instead of 'link href' in the head element. When I began cooking without a recipe, it had taken a few times before I gained a feel for using heat effectively to cook my ingredients to the desired result.</p>
 		<p>I started this blog to showcase my experiments on coding and cooking - relying less on other people's recipes and more on my own creativity.</p>
 		<h3>This site is using <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, HTML, SCSS, JS</h3>
-		<p>If you are interested in exploring my current blog's structure, I've open-sourced it <a href="https://github.com/jeesunikim/codeandfood-v01" target="_blank">here</a>.</p>
-		<p>I am in the process of moving my blog to Gatsby + Netlify. More updates on that coming soon!</p>
-    	<h3>To be where I am..</h3>
+		<p>Code for this website is <a href="https://github.com/jeesunikim/codeandfood-v01" target="_blank">here</a>.</p>
+    	<h3>My journey..</h3>
     	<ul class="achievements">
     		<li>
-    			<strong>1998: </strong>Built a first website for the movie that I shouldn't have been watching at that age, <a href="http://www.imdb.com/title/tt0117571/?ref_=nv_sr_3" target="_blank">Scream</a>
+    			<strong>19xx - 2003: </strong>Born and lived in South Korea
     		</li>
     		<li>
-    			<strong>2001: </strong>Fell in love with the USA &amp; started begging parents to send me to the USA
+    			<strong>2003, Summer: </strong>Came to the United States as an international student by myself (유학생)
     		</li>
     		<li>
-    			<strong>2003: </strong>After two years of begging, parents agreed to finance my journey to/in the USA
+    			<strong>2013, Spring: </strong>Graduated the University of Miami
     		</li>
     		<li>
-    			<strong>2003, Summer: </strong>Arrived in Jacksonville, Florida by myself
+    			<strong>2014, Spring: </strong>Frontend Developer intern at <a href="http://www.cpbgroup.com/" target="_blank">CP+B</a>.
     		</li>
     		<li>
-    			<strong>2003 &ndash; 2009: </strong>Improving my English along the way
+    			<strong>2014, Summer &ndash; 2016: </strong>Frontend Developer at <a href="https://wearebarbarian.com/" target="_blank">the Barbarian Group (TBG)</a>
     		</li>
     		<li>
-    			<strong>2012, Fall: </strong>Took a class on HTML/CSS/JS in my senior year at <a href="http://welcome.miami.edu/" target="_blank">The U</a>
+    			<strong>2016 &ndash; 2019, Spring: </strong>Frontend Developer at <a href="https://www.firstborn.com/" target="_blank">Firstborn</a>
     		</li>
-    		<li>
-    			<strong>2012 &ndash; 2013: </strong>Made websites for friends and family while taking <a href="https://teamtreehouse.com/" target="_blank">web development online class</a>
-    		</li>
-    		<li>
-    			<strong>2014, Spring: </strong>Developer intern at <a href="http://www.cpbgroup.com/" target="_blank">CP+B</a>.
-    		</li>
-    		<li>
-    			<strong>2014, Summer: </strong>Moved to NYC &amp; started working as a developer at <a href="https://barbariangroup.com/" target="_blank">the Barbarian Group (TBG)</a> - built landing pages and debugged lots of codes for TBG's biggest client, Samsung
-    		</li>
-    		<li>
-    			<strong>2015, Spring: </strong>Enrolled in <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy of Code</a> while working full time at TBG
-    		</li>
-    		<li>
-    			<strong>2015, Summer: </strong>Group Project "BetterBail" from <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy of Code</a> made as a semi-finalist in Robinhood Foundation-backed BlueRidge Labs incubator competition
-    		</li>
-    		<li>
-    			<strong>2015, Winter: </strong>Group Project "Subnodes" from <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy of Code</a> made as a finalist in BigApps NYC 2015
-    		</li>
-    		<li>
-    			<strong>2016 &ndash; Current: </strong>Building web based products for our clients using the latest web development at <a href="https://www.firstborn.com/" target="_blank">Firstborn</a>
+			<li>
+    			<strong>2019 &ndash; Current: </strong>Frontend Developer at <a href="https://www.stellar.org/" target="_blank">Stellar Development Foundation</a>
     		</li>
     	</ul>
     </div>
