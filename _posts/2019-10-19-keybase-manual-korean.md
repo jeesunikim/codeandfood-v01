@@ -2,7 +2,7 @@
 layout: post
 title: "키베이스 (Keybase) 메뉴얼"
 date: 2019-10-24 20:00:00
-image: https://jeesunikim.keybase.pub/keybase_manual_korean/profile_team_add02.jpg
+image: https://jeesunikim.keybase.pub/keybase_manual_korean/keybase.png
 desc: 한국 분들을 위한 키베이스 메뉴얼.
 categories: [code]
 ---
