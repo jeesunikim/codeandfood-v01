@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "키베이스 (Keybase) 사용법"
+title: "키베이스 (Keybase) 메뉴얼"
 date: 2019-10-24 20:00:00
 image: https://jeesunikim.keybase.pub/keybase_manual_korean/profile_team_add02.jpg
-desc: 키베이스 메뉴얼.
-categories: [lab]
+desc: 한국 분들을 위한 키베이스 메뉴얼.
+categories: [code]
 ---
 
 <div class="project-description">
 	<h2>키베이스 메뉴얼</h2>
 </div>
 
-<p>키베이스는 키 디렉토리라고해서 소셜미디아의 신분을 암호화된 키와 연결하여 신분을 쉽게 확인할수있는 서비스를 제공하는 회사입니다. 신분 증명같은건데요. 온라인에서 대화하고있는 사람이 내가 생각하는 그 사람이 맞는지 확인하기 위해 생겨진 서비스입니다. 그렇게 데뷔하여 몇년 후에 파일 저장소랑 채팅, git 저장소 그리고 크립토 월렛 (Bitcoin, Zcash, and Steallr) 서비스를 제공하기 시작한 회사입니다.</p>
+<p>키베이스는 키 디렉토리라고해서 소셜미디어의 신분을 암호화된 키와 연결하여 신분을 쉽게 확인할수있는 서비스를 제공하는 회사입니다. 신분 증명같은건데요. 온라인에서 대화하고있는 사람이 내가 생각하는 그 사람이 맞는지 확인하기 위해 생겨진 서비스입니다. 그렇게 데뷔하여 몇년 후에 파일 저장소랑 채팅, git 저장소 그리고 크립토 월렛 (Bitcoin, Zcash, and Stellar) 서비스를 제공하기 시작한 회사입니다.</p>
 
-<p>2017년 채팅 서비스가 시작해서 아직 외국어 언워지원은 없어서 영어만 가능합니다. 그래서 공식 Stellar (스텔라) 팀하고 대화하고 싶으신 분이나 아니면 본인의 개인정보를 보호하기 위해 키베이스를 사용하시고 싶어하시는 한국분들을 위해 메뉴얼을 준비했습니다. 기본 메세지 어플보다 기능이 많아서 이 매뉴얼이 조금이나마 도움이 됐으면 해요!</p>
+<p>2017년 채팅 서비스가 시작해서 아직 외국어 언어지원은 없어서 영어만 가능합니다. 그래서 공식 <a href="https://www.stellar.org/" target="_blank">Stellar (스텔라)</a> 팀하고 대화하고 싶으신 분이나 아니면 본인의 개인정보를 보호하기 위해 키베이스를 사용하시고 싶어하시는 한국분들을 위해 메뉴얼을 준비했습니다. 기본 메세지 어플보다 기능이 많아서 이 매뉴얼이 조금이나마 도움이 됐으면 해요!</p>
 
 <h3>디바이스 등록</h3>
 
@@ -26,7 +26,7 @@ categories: [lab]
 
 <p>최악의 상황을 막기 위해 저는 여러개의 컴퓨터와 핸드폰을 추가하는것은 물론, <strong>"paper key"</strong> 만들어서 종이에다가 써두는것을 추천합니다. 위 오른쪽 화면에 있는 <strong>"Create a paper key"</strong> 를 누르시면 Paper Key 가 생성됩니다.</p>
 
-<p>참고로 등록하는 디바이스들은 공개라는거 말씀드리고 싶습니다. <a href="https://keybase.io/jeesunikim/devices" target="_blank">https://keybase.io/jeesunikim/devices</a> 가시면 제가 등록한 디바이스들을 보실수 있는것처럼 비공개기가 아닌 <strong>공개</strong> 입니다. 이름은 아무거나 하셔도 돼니깐 이 점 참고해주세요.</p>
+<p>참고로 등록하는 디바이스들은 공개라는거 말씀드리고 싶습니다. <a href="https://keybase.io/jeesunikim/devices" target="_blank">https://keybase.io/jeesunikim/devices</a> 가시면 제가 등록한 디바이스들을 보실수 있는것처럼 비공개가 아닌 <strong>공개</strong> 입니다. 이름은 아무거나 하셔도 돼니깐 이 점 참고해주세요.</p>
 
 <h3>기본적인 프로필 그리고 사람 검색 방법</h3>
 
@@ -68,20 +68,20 @@ categories: [lab]
 	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/team.jpg" alt="team" />
 </div>
 
-<p>팀의 참여할수있는 방법들은 몇가지가 있는데요. <strong>참여하고싶으신 팀의 이름을 아실경우</strong> 왼쪽 메뉴 "Teams"을 클릭, 오른쪽 상단에 있는 "Join a team"을 클릭하시면 참여하고 싶으신 팀의 이름을 넣으시면 됩니다. </p>
+<p>팀에 참여할수있는 방법들은 몇가지가 있는데요. <strong>참여하고싶으신 팀의 이름을 아실경우</strong> 왼쪽 메뉴 "Teams"을 클릭, 오른쪽 상단에 있는 "Join a team"을 클릭하시면 참여하고 싶으신 팀의 이름을 넣으시면 됩니다. </p>
 
 <div class="project-image color--dark inline">
 	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/join_team01.jpg" alt="join team" />
 	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/join_team02.jpg" alt="join team #2" />
 </div>
 
-<p><strong>팔로우하는 사용자의 팀의 참가하고싶다 그리고 그 팀이 사용자의 프로필의 나와있다</strong>면 팔로우하는 사용자의 프로필에 들어가셔서 Teams 밑부분의 링크를 클릭하시면 "View team" 버튼이 나오는데요. 거기를 클릭하시면 그 팀의 정보랑 참여할수있는지를 보여줍니다.</p>
+<p><strong>팔로우하는 사용자의 팀에 참가 하고싶다 그리고 그 팀이 사용자의 프로필에 나와있다</strong>면 팔로우하는 사용자의 프로필에 들어가셔서 Teams 밑부분의 링크를 클릭하시면 "View team" 버튼이 나오는데요. 거기를 클릭하시면 그 팀의 정보랑 참여할수있는지를 보여줍니다.</p>
 
 <div class="project-image color--dark">
 	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/profile_team.jpg" alt="profile team" />
 </div>
 
-<p>팀의 참여하고나서 위의 프로필처럼 참여한 팀 목록을 프로필에 추가하시고 싶으시다면 팀 옆에나타나는 톱니바퀴 클릭하세요.</p>
+<p>팀에 참여하고나서 위의 프로필처럼 참여한 팀 목록을 프로필에 추가하시고 싶으시다면 팀 옆에나타나는 톱니바퀴 클릭하세요.</p>
 
 <div class="project-image color--dark inline">
 	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/view_team.jpg" alt="view team" />
@@ -143,6 +143,6 @@ categories: [lab]
 	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/files_02.jpg" alt="files #2" />	
 </div>
 
-<p class="is--centered">너무나도 많은 기능들이 있는 키베이스.<br/>인터페이스 익숙해지실때까지 시간이 걸리시거나 아니면 질문이있으신 분들은 <a href="https://twitter.com/codeandfood/" target="_blank">트위터</a> 혹은 이미 키베이스를 설치하셨으면 <a href="https://keybase.io/jeesunikim/" target="_blank">키베이스</a>로 궁금하신거 있으시면 물어보세요!<br/>빠른 이내의 대답드릴게요.</p>
+<p class="is--centered">너무나도 많은 기능들이 있는 키베이스.<br/>인터페이스 익숙해지실때까지 시간이 걸리시거나 아니면 질문이있으신 분들은 <a href="https://twitter.com/codeandfood/" target="_blank">트위터</a> 혹은 이미 키베이스를 설치하셨으면 <a href="https://keybase.io/jeesunikim/" target="_blank">키베이스</a>로 궁금하신거 있으시면 물어보세요!<br/>빠른 시일 내에 대답드릴게요.</p>
 
 <h1 class="is--centered">끝</h1>

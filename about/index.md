@@ -19,7 +19,7 @@ title: About
     	<h3>My journey..</h3>
     	<ul class="achievements">
     		<li>
-    			<strong>19xx - 2003: </strong>Born and lived in South Korea
+    			<strong>19xx &ndash; 2003: </strong>Born and lived in South Korea
     		</li>
     		<li>
     			<strong>2003, Summer: </strong>Came to the United States as an international student by myself (유학생)
@@ -37,7 +37,7 @@ title: About
     			<strong>2016 &ndash; 2019, Spring: </strong>Frontend Developer at <a href="https://www.firstborn.com/" target="_blank">Firstborn</a>
     		</li>
 			<li>
-    			<strong>2019 &ndash; Current: </strong>Frontend Developer at <a href="https://www.stellar.org/" target="_blank">Stellar Development Foundation</a>
+    			<strong>2019, Spring &ndash; Current: </strong>Frontend Developer at <a href="https://www.stellar.org/" target="_blank">Stellar Development Foundation</a>
     		</li>
     	</ul>
     </div>
