@@ -136,7 +136,7 @@ categories: [code]
 
 <h3>키베이스 파일 - 공개/비공개 파일 저장 그리고 공유하기 (클라우드)</h3>
 
-<p>키베이스의 또다른 기능은 클라우드 기능인데요. 250 GB 상당의 파일들을 공짜로 키베이스 파일에 올릴수있습니다. 예를들어 여기에 나와있는 모든 사진들은 다 키베이스 public 에 저장되어있는 사진들입니다. <a href="https://keybase.pub/jeesunikim/keybase_manual_korean/" target="_blank">키베이스의 저장되어있는 이 블로그 포스트 사진들</a>. 사적인 자료들은 private 폴더에 보관하세요. 밑에 모자이크 처리된곳에는 팀 그리고 채팅 사용자랑 파일/폴더 공유가 가능합니다.</p>
+<p>키베이스의 또다른 기능은 클라우드 기능인데요. 250 GB 상당의 파일들을 공짜로 키베이스 파일에 올릴수있습니다. 예를들어 여기에 나와있는 모든 사진들은 다 키베이스 public 에 저장되어있는 사진들입니다 (<a href="https://keybase.pub/jeesunikim/keybase_manual_korean/" target="_blank">키베이스의 저장되어있는 이 블로그 포스트 사진들</a>). 사적인 자료들은 private 폴더에 보관하세요. 밑에 모자이크 처리된곳에는 팀 그리고 채팅 사용자랑 파일/폴더 공유가 가능합니다.</p>
 
 <div class="project-image color--dark inline">
 	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/files.jpg" alt="files" />
