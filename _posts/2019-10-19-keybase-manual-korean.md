@@ -13,19 +13,6 @@ categories: [code]
 
 <p>2017년 채팅 서비스가 시작해서 아직 외국어 언어지원은 없어서 영어만 가능합니다. 그래서 공식 <a href="https://www.stellar.org/" target="_blank">Stellar (스텔라)</a> 팀하고 대화하고 싶으신 분이나 아니면 본인의 개인정보를 보호하기 위해 키베이스를 사용하시고 싶어하시는 한국분들을 위해 메뉴얼을 준비했습니다. 기본 메세지 어플보다 기능이 많아서 이 매뉴얼이 조금이나마 도움이 됐으면 해요!</p>
 
-<div class="project-description is--centered">
-	<span><strong>목록</strong></span>
-	<ul>
-		<li><a href="#devices">디바이스 등록 <strong>(중요한 부분)</strong></a></li>
-		<li><a href="#search">기본적인 프로필 그리고 사람 검색 방법</a></li>
-		<li><a href="#chat">1:1 채팅하는 방법</a></li>
-		<li><a href="#team-chat">팀 (Team) 채팅하는 방법</a></li>
-		<li><a href="#mute">채팅 알림 끄는법</a></li>
-		<li><a href="#wallet">XLM 루멘 송금 방식</a></li>
-		<li><a href="#files">키베이스 파일 - 공개/비공개 파일 저장 그리고 공유하기 (클라우드)</a></li>
-	</ul>
-</div>
-
 <h3 id="devices">디바이스 등록 <strong>(중요한 부분)</strong></h3>
 
 <div class="project-image color--dark inline">
