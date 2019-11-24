@@ -13,6 +13,19 @@ categories: [code]
 
 <p>2017년 채팅 서비스가 시작해서 아직 외국어 언어지원은 없어서 영어만 가능합니다. 그래서 공식 <a href="https://www.stellar.org/" target="_blank">Stellar (스텔라)</a> 팀하고 대화하고 싶으신 분이나 아니면 본인의 개인정보를 보호하기 위해 키베이스를 사용하시고 싶어하시는 한국분들을 위해 메뉴얼을 준비했습니다. 기본 메세지 어플보다 기능이 많아서 이 매뉴얼이 조금이나마 도움이 됐으면 해요!</p>
 
+<p class="is--centered"><strong>목록</strong></p>
+
+<ol class="is--centered">
+	<li>디바이스 등록 <strong>(중요한 부분)</strong></li>
+	<li>QR 코드로 새 디바이스를 (핸드폰 예) 등록하는 방법</li>
+	<li>기본적인 프로필 그리고 사람 검색 방법</li>
+	<li>1:1 채팅하는 방법</li>
+	<li>팀 (Team) 채팅하는 방법</li>
+	<li>채팅 알림 끄는법</li>
+	<li>XLM 루멘 송금 방식</li>
+	<li>키베이스 파일 - 공개/비공개 파일 저장 그리고 공유하기 (클라우드)</li>
+</ol>
+
 <h3 id="devices">디바이스 등록 <strong>(중요한 부분)</strong></h3>
 
 <div class="project-image color--dark inline">
@@ -25,6 +38,40 @@ categories: [code]
 <p>최악의 상황을 막기 위해 저는 여러개의 컴퓨터와 핸드폰을 추가하는것은 물론, <strong>"paper key"</strong>를 만들어서 종이에다가 써두어 보관하는것을 추천합니다. 만약에 등록한 컴퓨터와 핸드폰이 없으시더라도 이 paper key로 계정을 다시 찾을 수 있습니다. 위 오른쪽 화면에 있는 <strong>"Create a paper key"</strong> 를 누르시면 Paper Key 가 생성됩니다.</p>
 
 <p>참고로 등록하는 디바이스들은 공개라는거 말씀드리고 싶습니다. <a href="https://keybase.io/jeesunikim/devices" target="_blank">https://keybase.io/jeesunikim/devices</a> 가시면 제가 등록한 디바이스들을 보실수 있는것처럼 비공개가 아닌 <strong>공개</strong> 입니다. 이름은 아무거나 하셔도 돼니깐 이 점 참고해주세요.</p>
+
+<h3 id="new_device">QR 코드로 새 디바이스를 (핸드폰 예) 등록하는 방법</h3>
+
+<p>새 디바이스를 등록하시려면 먼저 이미 등록된 디바이스에서 추가하셔야합니다. 밑에서는 이미 키베이스에 등록되어있는 저의 컴퓨터 "<strong>Personal Jee</strong>" 디바이스를 바탕으로 예를 들었습니다. 키베이스 메뉴에서 "<strong>Devices</strong>" 를 누르신 후 "<strong>Add a device or paper key</strong>"를 클릭하시면 새 창이 뜹니다. 새 창의 "<strong>Add a phone</strong>"을 클릭해주세요.</p>
+
+<div class="project-image color--dark inline">
+	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/add_new_device.jpg" alt="Add a New Devices" />
+</div>
+
+<p>"<strong>Add a phone</strong>"을 클릭하시면 새 창에 QR 코드가 뜹니다. 이 QR 코드를 등록하실 핸드폰으로 찍으실때까지 창에 냅두세요.</p>
+
+<div class="project-image color--dark inline">
+	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/add_new_device04.jpg" alt="Add a New Devices #4" />
+</div>
+
+<p>그 다음 등록하시려는 핸드폰으로 가셔서 키베이스를 다운받으시고 로그인하시면 "<strong>Authorize this phone</strong>" 창이 뜹니다. 여기에서 QR 코드를 준 이미 등록되어있는 "<strong>Personal Jee</strong>" 디바이스 이름을 클릭하시면 "<strong>Name this phone</strong>" 창이 뜹니다.</p>
+
+<div class="project-image color--dark inline">
+	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/add_new_device02.jpg" alt="Add New Devices #2" />
+	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/add_new_device03.jpg" alt="Add a New Devices #3" />
+</div>
+
+<p> 핸드폰 디바이스의 이름을 등록하시고 "Continue"를 클릭하시면 카메라가 자동으로 켜지면서 "<strong>Perosnal Jee</strong>" 컴퓨터로 로그인해서 이 핸드폰을 등록하라는 메세지가 뜹니다. 여기에서 아까 켜놓은 QR 코드 창을 등록하시려는 핸드폰 카메라로 찍으시면 핸드폰이 등록됩니다.</p>
+
+<div class="project-image color--dark inline">
+	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/add_new_device05.jpg" alt="Add New Devices #5" />
+</div>
+
+<p>QR 코드를 찍으신 후에 바로 새 디바이스가 등록됩니다.</p>
+
+<div class="project-image color--dark inline">
+	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/add_new_device06.jpg" alt="Add New Devices #6" />
+	<img src="https://jeesunikim.keybase.pub/keybase_manual_korean/add_new_device07.jpg" alt="Add a New Devices #7" />
+</div>
 
 <h3 id="search">기본적인 프로필 그리고 사람 검색 방법</h3>
 
