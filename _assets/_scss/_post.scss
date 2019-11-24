@@ -213,6 +213,12 @@ ul {
     list-style: none;
 }
 
+ol {
+    &.is--centered {
+        list-style-position: inside;
+    }
+}
+
 .gist {
     margin-bottom: 20px;
     span,
