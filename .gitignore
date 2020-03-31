@@ -1,28 +1,10 @@
-# Ignore Jekyll generated files
-_site
-_drafts
-assets/js/*.map
-
-# Ignore caches and logs
-.idea/
-.sass-cache
-.asset-cache/
-.bundle/
-Gemfile.lock
-.ruby-version
-
-# Ignore images
-images/
+# Ignore Gatsby generated files
+public/
+.cache/
 
 # Ignore junk files
 .DS_Store
-
-# Environment-dependent files
-_config_local.yml
-package-lock.json
-
-# Ignore .jekyll-metadata (introduced by Jekyll 3.0 for incremental builds)
-.jekyll-metadata
+*.log
 
 # Ignore npm stuff
 node_modules/

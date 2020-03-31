@@ -1,56 +1,43 @@
 {
   "name": "codeandfood.com",
-  "version": "1.0.0",
-  "description": "Blog site for myself (http://www.github.com/jeesunikim)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeesunikim/codeandfood.com.git"
-  },
-  "keywords": [
-    "blog",
-    "food",
-    "code"
-  ],
+  "version": "2.0.0",
+  "description": "Work life balance? Code food balance!",
+  "main": "index.js",
+  "repository": "git@github.com:jeesunikim/codeandfood.com.git",
   "author": "Jeesun Kim",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jeesunikim/codeandfood.com/issues"
-  },
+  "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
+    "start": "gatsby develop",
+    "build": "gatsby build"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "homepage": "https://github.com/jeesunikim/codeandfood-v01#readme",
   "dependencies": {
-    "@babel/runtime": "^7.4.4",
-    "axios": "^0.18.0",
-    "browserslist": "^4.5.6",
-    "caniuse-lite": "^1.0.30000966",
-    "gsap": "^2.1.2",
-    "jsonp": "^0.2.1"
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/react": "^1.5.8",
+    "@stellar/eslint-config": "^1.0.3",
+    "@stellar/prettier-config": "^1.0.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "babel-preset-gatsby": "^0.3.1",
+    "gatsby": "^2.20.8",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-remark": "^2.7.1",
+    "gatsby-transformer-sharp": "^2.4.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1"
   },
-  "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/plugin-transform-runtime": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "autoprefixer": "^9.5.1",
-    "babel-loader": "^8.0.5",
-    "cross-env": "^5.2.0",
-    "css-loader": "^1.0.1",
-    "mini-css-extract-plugin": "^0.4.5",
-    "node-sass": "^4.12.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "stylelint": "^6.6.0",
-    "uglifyjs-webpack-plugin": "^2.1.2",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1",
-    "webpack-merge": "^4.2.1"
-  }
+  "homepage": "https://codeandfood.com",
+  "prettier": "@stellar/prettier-config"
 }
